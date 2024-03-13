@@ -1,0 +1,11 @@
+framework module PulseLabsFlightRecorderSDK {
+  umbrella header "PulseLabsFlightRecorderSDK.h"
+  export *
+
+  module * { export * }
+}
+
+module PulseLabsFlightRecorderSDK.Swift {
+  header "PulseLabsFlightRecorderSDK-Swift.h"
+  requires objc
+}

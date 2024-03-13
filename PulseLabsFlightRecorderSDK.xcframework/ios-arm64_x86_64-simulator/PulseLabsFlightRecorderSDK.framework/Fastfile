@@ -1,0 +1,42 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+default_platform(:ios)
+
+platform :ios do
+  desc "Package SDK"
+  lane :package_sdk do
+    swiftlint(mode: :fix)
+    swiftlint(mode: :lint)
+    sh("cd .. && rm -rf dist")
+    sh("cd .. && xcodebuild docbuild -scheme PulseLabsFlightRecorderSDK -derivedDataPath dist/docs")
+    sh("cd .. && $(xcrun --find docc) process-archive transform-for-static-hosting dist/docs/Build/Products/Debug-iphoneos/PulseLabsFlightRecorderSDK.doccarchive --output-path dist/docs_site")
+    xcodebuild(
+        archive: true,
+        project: "PulseLabsFlightRecorderSDK.xcodeproj",
+        scheme: "PulseLabsFlightRecorderSDK",
+        destination: "generic/platform=iOS",
+        archive_path: ".tmp/archives/PulseLabsFlightRecorderSDK-iOS"
+    )
+    xcodebuild(
+        archive: true,
+        project: "PulseLabsFlightRecorderSDK.xcodeproj",
+        scheme: "PulseLabsFlightRecorderSDK",
+        destination: "generic/platform=iOS Simulator",
+        archive_path: ".tmp/archives/PulseLabsFlightRecorderSDK-iOS_Simulator"
+    )
+    sh("cd .. && xcodebuild -create-xcframework -archive .tmp/archives/PulseLabsFlightRecorderSDK-iOS.xcarchive -framework PulseLabsFlightRecorderSDK.framework -archive .tmp/archives/PulseLabsFlightRecorderSDK-iOS_Simulator.xcarchive -framework PulseLabsFlightRecorderSDK.framework -output dist/xcframeworks/PulseLabsFlightRecorderSDK.xcframework")
+  end
+end

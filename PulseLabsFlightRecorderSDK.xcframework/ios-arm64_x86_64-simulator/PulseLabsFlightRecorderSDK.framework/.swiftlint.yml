@@ -1,0 +1,253 @@
+# By default, SwiftLint uses a set of sensible default rules you can adjust:
+disabled_rules: # rule identifiers turned on by default to exclude from running
+    # Rationale: Arbitrary restriction
+    # https://realm.github.io/SwiftLint/cyclomatic_complexity.html
+    - cyclomatic_complexity
+    # Rationale: Arbitrary restriction
+    # https://realm.github.io/SwiftLint/file_length.html
+    - file_length
+    # Rationale: Arbitrary restriction
+    # https://realm.github.io/SwiftLint/function_body_length.html
+    - function_body_length
+    # Rationale: Arbitrary restriction
+    # https://realm.github.io/SwiftLint/function_parameter_count.html
+    - function_parameter_count
+    # Rationale: Arbitrary restriction
+    # https://realm.github.io/SwiftLint/large_tuple.html
+    - large_tuple
+    # Rationale: Arbitrary restriction
+    # https://realm.github.io/SwiftLint/line_length.html
+    - line_length
+    # Rationale: Arbitrary restriction
+    # https://realm.github.io/SwiftLint/nesting.html
+    - nesting
+    # Rationale: Arbitrary restriction
+    # https://realm.github.io/SwiftLint/type_body_length.html
+    - type_body_length
+    # Rationale: Arbitrary restriction
+    # https://realm.github.io/SwiftLint/identifier_name.html
+    - identifier_name
+    # Rationale: Prevents use of todos
+    - todo
+    # Rationale: Arbitrary
+    # https://realm.github.io/SwiftLint/multiple_closures_with_trailing_closure.html
+    - multiple_closures_with_trailing_closure
+    # Rationale: screen reader TBD
+    - accessibility_label_for_image
+
+opt_in_rules: # some rules are only opt-in
+    # Rationale: Aids accessibility
+    # https://realm.github.io/SwiftLint/accessibility_label_for_image.html
+    - accessibility_label_for_image
+    # https://realm.github.io/SwiftLint/accessibility_trait_for_button.html
+    - accessibility_trait_for_button
+
+    # Rationale: When using map, it is typically used to transform a current array into something else
+    # https://realm.github.io/SwiftLint/array_init.html
+    - array_init
+
+    # Rationale: Provides consistency in coding style
+    # https://realm.github.io/SwiftLint/attributes.html
+    - attributes
+
+    # Rationale: Provides consistency in coding style
+    # https://realm.github.io/SwiftLint/closure_end_indentation.html
+    - closure_end_indentation
+
+    # Rationale: Provides consistency in coding style
+    # https://realm.github.io/SwiftLint/closure_spacing.html
+    - closure_spacing
+
+    # Rationale: Provides consistency in coding style
+    # https://realm.github.io/SwiftLint/collection_alignment.html
+    - collection_alignment
+
+    # Rationale: Provides consistency in coding style
+    # https://realm.github.io/SwiftLint/comma_inheritance.html
+    - comma_inheritance
+
+    # Rationale: Provides consistency in coding style
+    # https://realm.github.io/SwiftLint/conditional_returns_on_newline.html
+    - conditional_returns_on_newline
+
+    # Rationale: A more clear and consise way to check if something exists
+    # https://realm.github.io/SwiftLint/contains_over_filter_count.html
+    - contains_over_filter_count
+
+    # Rationale: A more clear and consise way to check if something exists
+    # https://realm.github.io/SwiftLint/contains_over_filter_is_empty.html
+    - contains_over_filter_is_empty
+
+    # Rationale: A more clear and consise way to check if something exists
+    # https://realm.github.io/SwiftLint/contains_over_first_not_nil.html
+    - contains_over_first_not_nil
+
+    # Rationale: A more clear and consise way to check if something exists
+    # https://realm.github.io/SwiftLint/contains_over_range_nil_comparison.html
+    - contains_over_range_nil_comparison
+
+    # Rationale: simpler code, clearer
+    # https://realm.github.io/SwiftLint/direct_return.html
+    - direct_return
+
+    # Rationale: Encourages proper memory practices
+    # https://realm.github.io/SwiftLint/discarded_notification_center_observer.html
+    - discarded_notification_center_observer
+
+    # Rationale: Prevent unnecessary issues
+    # https://realm.github.io/SwiftLint/discouraged_none_name.html
+    - discouraged_none_name
+
+    # Rationale: A nil bool is confusing
+    # https://realm.github.io/SwiftLint/discouraged_optional_boolean.html
+    - discouraged_optional_boolean
+
+    # Rationale: An optional collection is confusing, it can just be empty
+    # https://realm.github.io/SwiftLint/discouraged_optional_collection.html
+    - discouraged_optional_collection
+
+    # Rationale: Provides consistency in coding style
+    # https://realm.github.io/SwiftLint/empty_collection_literal.html
+    - empty_collection_literal
+
+    # Rationale: Prevents coder error
+    # https://realm.github.io/SwiftLint/fallthrough.html
+    - fallthrough
+
+    # Rationale: Encourages better documentation
+    # https://realm.github.io/SwiftLint/fatal_error_message.html
+    - fatal_error_message
+
+    # Rationale: Performance and education
+    # https://realm.github.io/SwiftLint/first_where.html
+    - first_where
+
+    # Rationale: Provides consistency in coding style
+    # https://realm.github.io/SwiftLint/flatmap_over_map_reduce.html
+    - flatmap_over_map_reduce
+
+    # Rationale: Prevents coder error, doesn't crash, makes coder be explicit about their assumptions
+    # https://realm.github.io/SwiftLint/force_unwrapping.html
+    - force_unwrapping
+
+    # Rationale: Easier to use APIs with this
+    # https://realm.github.io/SwiftLint/function_default_parameter_at_end.html
+    - function_default_parameter_at_end
+
+    # Rationale: Prevents coder error, doesn't crash, makes coder be explicit about their assumptions
+    # https://realm.github.io/SwiftLint/implicitly_unwrapped_optional.html
+    - implicitly_unwrapped_optional
+
+    # Rationale: Consistency
+    # https://realm.github.io/SwiftLint/indentation_width.html
+    - indentation_width
+
+    # Rationale: Provides consistency in coding style
+    # https://realm.github.io/SwiftLint/last_where.html
+    - last_where
+
+    # Rationale: consistency
+    # https://realm.github.io/SwiftLint/let_var_whitespace.html
+    - let_var_whitespace
+
+    # Rationale: consistency
+    # https://realm.github.io/SwiftLint/literal_expression_end_indentation.html
+    - literal_expression_end_indentation
+
+    # Rationale: Prevents accidental error
+    # https://realm.github.io/SwiftLint/lower_acl_than_parent.html
+    - lower_acl_than_parent
+
+    # Rationale: Coding consistency
+    - multiline_arguments
+    - multiline_arguments_brackets
+    - multiline_function_chains
+    - multiline_literal_brackets
+    - multiline_parameters
+    - multiline_parameters_brackets
+
+    # Rationale: consistency
+    # https://realm.github.io/SwiftLint/operator_usage_whitespace.html
+    - operator_usage_whitespace
+
+    # Rationale: consistency
+    # https://realm.github.io/SwiftLint/optional_enum_case_matching.html
+    - optional_enum_case_matching
+
+    # Rationale: Prevents coder error
+    # https://realm.github.io/SwiftLint/overridden_super_call.html
+    - overridden_super_call
+
+    # Rationale: Prevents unpredictable behavior
+    # https://realm.github.io/SwiftLint/override_in_extension.html
+    - override_in_extension
+
+    # Rationale: Consistency
+    # https://realm.github.io/SwiftLint/period_spacing.html
+    - period_spacing
+
+    # Rationale: Consistency
+    # https://realm.github.io/SwiftLint/prefer_self_in_static_references.html
+    - prefer_self_in_static_references
+    # https://realm.github.io/SwiftLint/prefer_self_type_over_type_of_self.html
+    - prefer_self_type_over_type_of_self
+
+    # Rationale: UI elements should only be configurable by their owners and not be exposed to others
+    # https://realm.github.io/SwiftLint/private_action.html
+    - private_action
+
+    # Rationale: UI elements should only be configurable by their owners and not be exposed to others
+    # https://realm.github.io/SwiftLint/private_outlet.html
+    - private_outlet
+
+    # Rationale: Prevents coder error
+    # https://realm.github.io/SwiftLint/prohibited_super_call.html
+    - prohibited_super_call
+
+    # Rationale: Performance
+    # https://realm.github.io/SwiftLint/reduce_into.html
+    - reduce_into
+
+    # Rationale: Provides consistency in coding style and brevity
+    # https://realm.github.io/SwiftLint/redundant_nil_coalescing.html
+    - redundant_nil_coalescing
+
+    # Rationale: Provides consistency in coding style
+    # https://realm.github.io/SwiftLint/required_enum_case.html
+    - required_enum_case
+
+    # Rationale: Provides consistency and clarity in coding style and is less code
+    # https://realm.github.io/SwiftLint/sorted_first_last.html
+    - sorted_first_last
+
+    # Rationale: Consistency
+    # https://realm.github.io/SwiftLint/sorted_imports.html
+    - sorted_imports
+
+    # Rationale: Prevent crashes
+    # https://realm.github.io/SwiftLint/unowned_variable_capture.html
+    - unowned_variable_capture
+
+    # Rationale: Clarity
+    # https://realm.github.io/SwiftLint/untyped_error_in_catch.html
+    - untyped_error_in_catch
+
+    # Rationale: Provides consistency in coding style
+    - vertical_whitespace_between_cases
+    - vertical_whitespace_closing_braces
+    - vertical_whitespace_opening_braces
+
+    # Rationale: Prevents retain cycles and coder error
+    # https://realm.github.io/SwiftLint/weak_delegate.html
+    - weak_delegate
+
+    # Rationale: Consistency
+    # https://realm.github.io/SwiftLint/yoda_condition.html
+    - yoda_condition
+
+excluded: # paths to ignore during linting. Takes precedence over `included`.
+    - Carthage
+    - Pods
+    - dist
+
+allow_zero_lintable_files: false
