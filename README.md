@@ -23,7 +23,7 @@
 
 4. In the menu bar, select **File** -> **Add Package Dependencies...**.
 
-5. In the **Apple Swift Packages** pop-up window, input *https://github.com/pulselabs-ai/flight-recorder-pub-ios.git* into the **Search or Enter Package URL** search box in the top right corner.
+5. In the **Apple Swift Packages** pop-up window, input *https://github.com/pulselabs-ai/flight-recorder-swift-package* into the **Search or Enter Package URL** search box in the top right corner.
 
    <img src="docs/images/install_step_2.webp" width="650" alt="" />
 
