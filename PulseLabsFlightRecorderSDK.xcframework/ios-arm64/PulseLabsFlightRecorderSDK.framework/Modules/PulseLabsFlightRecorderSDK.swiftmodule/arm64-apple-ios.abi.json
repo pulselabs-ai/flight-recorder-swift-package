@@ -2635,7 +2635,7 @@
       "kind": "StringLiteral",
       "offset": 17,
       "length": 7,
-      "value": "\"1.0.1\""
+      "value": "\"1.2.1\""
     },
     {
       "filePath": "\/Users\/markirby\/Code\/pulselabs\/saas\/PulseLabsFlightRecorderSDK\/Config.swift",

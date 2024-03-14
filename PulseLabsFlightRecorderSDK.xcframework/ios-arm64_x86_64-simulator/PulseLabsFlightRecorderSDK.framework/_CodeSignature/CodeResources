@@ -42,7 +42,7 @@
 		</data>
 		<key>Modules/PulseLabsFlightRecorderSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		Yj/HMXed0M+hESGWY1a+l87ZSXA=
+		E5sAaNh2xRBTrKpdpbVjOGGYwd4=
 		</data>
 		<key>Modules/PulseLabsFlightRecorderSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -58,11 +58,11 @@
 		</data>
 		<key>Modules/PulseLabsFlightRecorderSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		Dtl6ziciS+Qf/RGzV0lg30n5Ado=
+		pAflFNdtoxil/Md3/Yn+V3RFL0A=
 		</data>
 		<key>Modules/PulseLabsFlightRecorderSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		Yj/HMXed0M+hESGWY1a+l87ZSXA=
+		E5sAaNh2xRBTrKpdpbVjOGGYwd4=
 		</data>
 		<key>Modules/PulseLabsFlightRecorderSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -78,7 +78,7 @@
 		</data>
 		<key>Modules/PulseLabsFlightRecorderSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		xyYpr53BTU6jORLtNV+cedTzBjc=
+		zTxU+EdYPeB34cSvnUA15yghxo8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -159,7 +159,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			FKdYdPIaFF8Wiu0oeAXjHEP/nvLwX8h8RDku9WK/dyY=
+			akCdVTfZ1eIU1YoNiJgvAe7D12A1sTWqVGLyaV11I0k=
 			</data>
 		</dict>
 		<key>Modules/PulseLabsFlightRecorderSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -187,14 +187,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			BeIeLmryQ/bSDeDZbZ7PJlnnlgFQiKcQGoc7WVodkEQ=
+			hXl5bHWN4BJp4MOEu3J/Ycnwe09CIvPBm/xFMJcBtjE=
 			</data>
 		</dict>
 		<key>Modules/PulseLabsFlightRecorderSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			FKdYdPIaFF8Wiu0oeAXjHEP/nvLwX8h8RDku9WK/dyY=
+			akCdVTfZ1eIU1YoNiJgvAe7D12A1sTWqVGLyaV11I0k=
 			</data>
 		</dict>
 		<key>Modules/PulseLabsFlightRecorderSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -222,7 +222,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			5S8inwQOSUrxhsFc+IQSYtYvWHJ+kVtsTjQqZK65nd0=
+			zknAWCePtH0wQv1aismF5wJXqJ0DX20vP3lws1Bd9nY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
