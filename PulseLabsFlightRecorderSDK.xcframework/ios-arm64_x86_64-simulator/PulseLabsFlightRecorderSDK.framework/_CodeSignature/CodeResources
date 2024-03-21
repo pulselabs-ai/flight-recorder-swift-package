@@ -10,7 +10,7 @@
 		</data>
 		<key>AppConfig.plist</key>
 		<data>
-		LRIT+0ECpxM8VTj1ojlMDa9KhGM=
+		v5BKjGWvvx8z36iL/cbkaPjhDzQ=
 		</data>
 		<key>Appfile</key>
 		<data>
@@ -18,7 +18,7 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		yoLXktT7uuJX+nO1KSwOcMXhpVM=
+		wTYiyp0YwApRby026aLKCOjtUvA=
 		</data>
 		<key>ExampleAppConfig.plist</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Headers/PulseLabsFlightRecorderSDK-Swift.h</key>
 		<data>
-		hM3S5ST5ZhWrTJigu2SxC8hA2jg=
+		aRaaPh+z5X2SbUQZzrdc0g4DnZU=
 		</data>
 		<key>Headers/PulseLabsFlightRecorderSDK.h</key>
 		<data>
@@ -38,47 +38,47 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		G7FZAuCSjJP2ISse71FDrJqMQdU=
+		b4L18ZTGmrtUPLr4NP82TW8j9pw=
 		</data>
 		<key>Modules/PulseLabsFlightRecorderSDK.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		E5sAaNh2xRBTrKpdpbVjOGGYwd4=
+		LUzhmZMGESBA2m1Rv6E4r2vWccI=
 		</data>
 		<key>Modules/PulseLabsFlightRecorderSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		5JMIHxPK2G5gLwkDExnJmniZDGU=
+		q5AHT8RTX4fQ1e6biMNb/un5zHE=
 		</data>
 		<key>Modules/PulseLabsFlightRecorderSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		mHrjBlBE3Nk2jSaCF71/0FaksXE=
+		CTvBUwf4iC+LYvXHnJxnKHuELpA=
 		</data>
 		<key>Modules/PulseLabsFlightRecorderSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		5JMIHxPK2G5gLwkDExnJmniZDGU=
+		q5AHT8RTX4fQ1e6biMNb/un5zHE=
 		</data>
 		<key>Modules/PulseLabsFlightRecorderSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		pAflFNdtoxil/Md3/Yn+V3RFL0A=
+		Zaf3Iqf3/YFHtCxG7FIoITI+bE8=
 		</data>
 		<key>Modules/PulseLabsFlightRecorderSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		E5sAaNh2xRBTrKpdpbVjOGGYwd4=
+		LUzhmZMGESBA2m1Rv6E4r2vWccI=
 		</data>
 		<key>Modules/PulseLabsFlightRecorderSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		TRqUAJvaWZD1GEZaE3TGIrMH56o=
+		V0JF5e1Dn3W0UvPHn6+0EOIZDsk=
 		</data>
 		<key>Modules/PulseLabsFlightRecorderSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		yIgIxTJNyuNV7lb2W4uCnKQVV2k=
+		wusJVJmed9FyBE2oPWyKjheNAvg=
 		</data>
 		<key>Modules/PulseLabsFlightRecorderSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		TRqUAJvaWZD1GEZaE3TGIrMH56o=
+		V0JF5e1Dn3W0UvPHn6+0EOIZDsk=
 		</data>
 		<key>Modules/PulseLabsFlightRecorderSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		zTxU+EdYPeB34cSvnUA15yghxo8=
+		I1AHvOVByUZwCTQ+GzGG1a1xNeA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -110,7 +110,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			K3+SRweq8vlO/Mm1AyHeaFIr0MNx0lHGDrTK8Pm8rr4=
+			ThEtwzViPL/a/B8DWG+EkUbd/gLMmkkZ8JY86N4Ubyo=
 			</data>
 		</dict>
 		<key>Appfile</key>
@@ -124,7 +124,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			wLUhrfC1yGwnbukspzVTs6l0gSrbH3xMahGj350J01A=
+			t8W2BxjYQy+XdNoSwP7r0Gr97OObc14xEvluBeoJbL0=
 			</data>
 		</dict>
 		<key>ExampleAppConfig.plist</key>
@@ -145,7 +145,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			pQRxywQj0WccTyKgqpufelzyinxlE0aVEX8zEgkpx3Y=
+			DXFXElolYafTSmckt16tGVhuxofQdddeL89tS8K5eOY=
 			</data>
 		</dict>
 		<key>Headers/PulseLabsFlightRecorderSDK.h</key>
@@ -159,70 +159,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			akCdVTfZ1eIU1YoNiJgvAe7D12A1sTWqVGLyaV11I0k=
+			vlIboVcpHew9Jgf3ES6zS6BJ4bfUs1EPMGLWM2O9M3A=
 			</data>
 		</dict>
 		<key>Modules/PulseLabsFlightRecorderSDK.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			O7kX/LdSiFMRfCnKGBC84zFIXYER5fSIsK5Boga9paM=
+			Wx6f+tf4bJ31PwqQu+iD14RnfDRAT/qsjKbk8u+folE=
 			</data>
 		</dict>
 		<key>Modules/PulseLabsFlightRecorderSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1EHvBsh72v7q3n5vm2M9Wdg63MedC1cl4N8JC90UjZI=
+			Xucx1/LkR6ngFn454An0ETMFoj6EU72UgnduQTyQGBk=
 			</data>
 		</dict>
 		<key>Modules/PulseLabsFlightRecorderSDK.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			O7kX/LdSiFMRfCnKGBC84zFIXYER5fSIsK5Boga9paM=
+			Wx6f+tf4bJ31PwqQu+iD14RnfDRAT/qsjKbk8u+folE=
 			</data>
 		</dict>
 		<key>Modules/PulseLabsFlightRecorderSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hXl5bHWN4BJp4MOEu3J/Ycnwe09CIvPBm/xFMJcBtjE=
+			MYhYJ4EYTkrM1l51D0LIyiPNEwf46wY+myM+DJOO83c=
 			</data>
 		</dict>
 		<key>Modules/PulseLabsFlightRecorderSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			akCdVTfZ1eIU1YoNiJgvAe7D12A1sTWqVGLyaV11I0k=
+			vlIboVcpHew9Jgf3ES6zS6BJ4bfUs1EPMGLWM2O9M3A=
 			</data>
 		</dict>
 		<key>Modules/PulseLabsFlightRecorderSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Ugl4ea5/Rkomq0FcmWb/7fYbTGs6GFUJ7SgwO19M+5A=
+			Sv49olsPVaUrlEJIiD4QhdEoPSxsWqHEuB/88+VjAQE=
 			</data>
 		</dict>
 		<key>Modules/PulseLabsFlightRecorderSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			mb96GWolE8XxiMt0JSHE2y3fqsydH5qS1+zZqcxhsJs=
+			gQ1aFn5WRj9TUBzooLz8/WlPnzA7MqiyHTr5LhgCSgM=
 			</data>
 		</dict>
 		<key>Modules/PulseLabsFlightRecorderSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Ugl4ea5/Rkomq0FcmWb/7fYbTGs6GFUJ7SgwO19M+5A=
+			Sv49olsPVaUrlEJIiD4QhdEoPSxsWqHEuB/88+VjAQE=
 			</data>
 		</dict>
 		<key>Modules/PulseLabsFlightRecorderSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			zknAWCePtH0wQv1aismF5wJXqJ0DX20vP3lws1Bd9nY=
+			A1jhsLEZplLmr+CHvN8O8Ep0qf8ir3sJyXHqO48Esc4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
