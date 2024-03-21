@@ -1255,13 +1255,20 @@
       },
       {
         "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
+        "name": "Foundation",
+        "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "PulseLabsFlightRecorderSDK",
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "PulseLabsFlightRecorderSDK"
       },
       {
         "kind": "Import",
@@ -2556,7 +2563,7 @@
     {
       "filePath": "\/Users\/markirby\/Code\/pulselabs\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/UI\/Views\/Shared\/VideoEditorView.swift",
       "kind": "StringLiteral",
-      "offset": 1284,
+      "offset": 1964,
       "length": 11,
       "value": "\"PulseLabsFlightRecorderSDK.Coordinator\""
     },
@@ -2635,7 +2642,7 @@
       "kind": "StringLiteral",
       "offset": 17,
       "length": 7,
-      "value": "\"1.2.1\""
+      "value": "\"1.2.2\""
     },
     {
       "filePath": "\/Users\/markirby\/Code\/pulselabs\/saas\/PulseLabsFlightRecorderSDK\/Config.swift",
@@ -2885,14 +2892,21 @@
     {
       "filePath": "\/Users\/markirby\/Code\/pulselabs\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/UI\/Views\/Shared\/MediaView.swift",
       "kind": "BooleanLiteral",
-      "offset": 591,
+      "offset": 616,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/markirby\/Code\/pulselabs\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/UI\/Views\/Shared\/MediaView.swift",
       "kind": "BooleanLiteral",
-      "offset": 3896,
+      "offset": 672,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/markirby\/Code\/pulselabs\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/UI\/Views\/Shared\/MediaView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4387,
       "length": 5,
       "value": "false"
     },

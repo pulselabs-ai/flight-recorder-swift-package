@@ -353,6 +353,7 @@ SWIFT_CLASS("_TtC26PulseLabsFlightRecorderSDK17FlightRecorderSDK")
 
 
 
+
 @class UIEvent;
 
 @interface UIWindow (SWIFT_EXTENSION(PulseLabsFlightRecorderSDK))

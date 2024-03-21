@@ -353,6 +353,7 @@ SWIFT_CLASS("_TtC26PulseLabsFlightRecorderSDK17FlightRecorderSDK")
 
 
 
+
 @class UIEvent;
 
 @interface UIWindow (SWIFT_EXTENSION(PulseLabsFlightRecorderSDK))
@@ -715,6 +716,7 @@ SWIFT_CLASS("_TtC26PulseLabsFlightRecorderSDK17FlightRecorderSDK")
 @interface FlightRecorderSDK (SWIFT_EXTENSION(PulseLabsFlightRecorderSDK)) <NSCopying>
 - (id _Nonnull)copyWithZone:(struct _NSZone * _Nullable)_ SWIFT_WARN_UNUSED_RESULT;
 @end
+
 
 
 
