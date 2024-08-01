@@ -18,12 +18,95 @@ import _AVKit_SwiftUI
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
+public enum HTTPStatusCode : Swift.Int, Swift.Error {
+  case `continue`
+  case switchingProtocols
+  case processing
+  case ok
+  case created
+  case accepted
+  case nonAuthoritativeInformation
+  case noContent
+  case resetContent
+  case partialContent
+  case multiStatus
+  case alreadyReported
+  case IMUsed
+  case multipleChoices
+  case movedPermanently
+  case found
+  case seeOther
+  case notModified
+  case useProxy
+  case switchProxy
+  case temporaryRedirect
+  case permenantRedirect
+  case badRequest
+  case unauthorized
+  case paymentRequired
+  case forbidden
+  case notFound
+  case methodNotAllowed
+  case notAcceptable
+  case proxyAuthenticationRequired
+  case requestTimeout
+  case conflict
+  case gone
+  case lengthRequired
+  case preconditionFailed
+  case payloadTooLarge
+  case URITooLong
+  case unsupportedMediaType
+  case rangeNotSatisfiable
+  case expectationFailed
+  case teapot
+  case misdirectedRequest
+  case unprocessableEntity
+  case locked
+  case failedDependency
+  case upgradeRequired
+  case preconditionRequired
+  case tooManyRequests
+  case requestHeaderFieldsTooLarge
+  case noResponse
+  case unavailableForLegalReasons
+  case SSLCertificateError
+  case SSLCertificateRequired
+  case HTTPRequestSentToHTTPSPort
+  case clientClosedRequest
+  case internalServerError
+  case notImplemented
+  case badGateway
+  case serviceUnavailable
+  case gatewayTimeout
+  case HTTPVersionNotSupported
+  case variantAlsoNegotiates
+  case insufficientStorage
+  case loopDetected
+  case notExtended
+  case networkAuthenticationRequired
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public enum NetworkError : Swift.Error {
+  case urlIsInvalid
+  case httpError(status: PulseLabsFlightRecorderSDK.HTTPStatusCode, errorMessage: Swift.String)
+  case parsingError(errorMessage: Swift.String, dataInString: Swift.String)
+  case sessionError(errorMessage: Swift.String)
+}
+public struct FlightRecorderCustomFontsLib {
+  public init(ultraSmallBody: SwiftUI.Font?, ultraSmallBodySemiBold: SwiftUI.Font?, smallBody: SwiftUI.Font?, smallBodyBold: SwiftUI.Font?, smallBodySemiBold: SwiftUI.Font?, body: SwiftUI.Font?, bodyBold: SwiftUI.Font?, bodySemiBold: SwiftUI.Font?, headline4: SwiftUI.Font?, headline4Bold: SwiftUI.Font?, headline3Bold: SwiftUI.Font?)
+}
 @_hasMissingDesignatedInitializers @objc public class FlightRecorderSDK : ObjectiveC.NSObject {
   @objc public static func start(apiKey: Swift.String, automaticallyShowIntroduction: Swift.Bool = true)
-  @objc public static func start(apiKey: Swift.String, automaticallyShowIntroduction: Swift.Bool = true, platform: Swift.String = "", useReplayKit: Swift.Bool = false)
+  @objc public static func start(apiKey: Swift.String, automaticallyShowIntroduction: Swift.Bool = true, platform: Swift.String = "", useReplayKit: Swift.Bool = false, surveyName: Swift.String? = nil)
+  public static func start(apiKey: Swift.String, automaticallyShowIntroduction: Swift.Bool = true, platform: Swift.String = "", useReplayKit: Swift.Bool = false, surveyName: Swift.String? = nil, customFontsLib: PulseLabsFlightRecorderSDK.FlightRecorderCustomFontsLib? = nil)
   @objc public static func showIntroductionUI() throws
   @objc public static func showIntroductionUI(displayOnlyOnce: Swift.Bool = true) throws
-  @objc public static func triggerCaptureRecording() throws
+  @objc public static func triggerCaptureRecording(surveyName: Swift.String? = nil) throws
   @objc deinit
 }
 extension PulseLabsFlightRecorderSDK.FlightRecorderSDK : Foundation.NSCopying {
@@ -33,3 +116,11 @@ extension UIKit.UIWindow {
   @objc @_Concurrency.MainActor(unsafe) dynamic open func swizzled_motionEnded(_ motion: UIKit.UIEvent.EventSubtype, with _: UIKit.UIEvent?)
 }
 
+public protocol SessionApi {
+  #if compiler(>=5.3) && $AsyncAwait
+  func data(for request: Foundation.URLRequest) async throws -> (Foundation.Data, Foundation.URLResponse)
+  #endif
+}
+extension PulseLabsFlightRecorderSDK.HTTPStatusCode : Swift.Equatable {}
+extension PulseLabsFlightRecorderSDK.HTTPStatusCode : Swift.Hashable {}
+extension PulseLabsFlightRecorderSDK.HTTPStatusCode : Swift.RawRepresentable {}
