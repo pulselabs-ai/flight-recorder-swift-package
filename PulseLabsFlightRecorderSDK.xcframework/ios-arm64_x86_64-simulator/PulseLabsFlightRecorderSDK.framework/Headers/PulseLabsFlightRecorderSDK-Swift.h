@@ -305,7 +305,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 SWIFT_CLASS("_TtC26PulseLabsFlightRecorderSDK17FlightRecorderSDK")
 @interface FlightRecorderSDK : NSObject
 + (void)startWithApiKey:(NSString * _Nonnull)apiKey automaticallyShowIntroduction:(BOOL)automaticallyShowIntroduction;
-+ (void)startWithApiKey:(NSString * _Nonnull)apiKey automaticallyShowIntroduction:(BOOL)automaticallyShowIntroduction platform:(NSString * _Nonnull)platform useReplayKit:(BOOL)useReplayKit;
++ (void)startWithApiKey:(NSString * _Nonnull)apiKey automaticallyShowIntroduction:(BOOL)automaticallyShowIntroduction platform:(NSString * _Nonnull)platform useReplayKit:(BOOL)useReplayKit surveyName:(NSString * _Nullable)surveyName;
 /// Show the introduction screen multiple times. This is here to provide backwards compatibility for Objective-C users with previous SDK versions. See method <code>showIntroductionUI:displayOnlyOnce</code> for flexible implementation.
 ///
 /// throws:
@@ -337,7 +337,7 @@ SWIFT_CLASS("_TtC26PulseLabsFlightRecorderSDK17FlightRecorderSDK")
 ///     <code>FlightRecorderSDKError.failedToStart</code>: Thrown when the SDK fails to start.
 ///   </li>
 /// </ul>
-+ (BOOL)triggerCaptureRecordingAndReturnError:(NSError * _Nullable * _Nullable)error;
++ (BOOL)triggerCaptureRecordingWithSurveyName:(NSString * _Nullable)surveyName error:(NSError * _Nullable * _Nullable)error;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -354,11 +354,13 @@ SWIFT_CLASS("_TtC26PulseLabsFlightRecorderSDK17FlightRecorderSDK")
 
 
 
+
 @class UIEvent;
 
 @interface UIWindow (SWIFT_EXTENSION(PulseLabsFlightRecorderSDK))
 - (void)swizzled_motionEnded:(enum UIEventSubtype)motion with:(UIEvent * _Nullable)_;
 @end
+
 
 #endif
 #if __has_attribute(external_source_symbol)
@@ -675,7 +677,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 SWIFT_CLASS("_TtC26PulseLabsFlightRecorderSDK17FlightRecorderSDK")
 @interface FlightRecorderSDK : NSObject
 + (void)startWithApiKey:(NSString * _Nonnull)apiKey automaticallyShowIntroduction:(BOOL)automaticallyShowIntroduction;
-+ (void)startWithApiKey:(NSString * _Nonnull)apiKey automaticallyShowIntroduction:(BOOL)automaticallyShowIntroduction platform:(NSString * _Nonnull)platform useReplayKit:(BOOL)useReplayKit;
++ (void)startWithApiKey:(NSString * _Nonnull)apiKey automaticallyShowIntroduction:(BOOL)automaticallyShowIntroduction platform:(NSString * _Nonnull)platform useReplayKit:(BOOL)useReplayKit surveyName:(NSString * _Nullable)surveyName;
 /// Show the introduction screen multiple times. This is here to provide backwards compatibility for Objective-C users with previous SDK versions. See method <code>showIntroductionUI:displayOnlyOnce</code> for flexible implementation.
 ///
 /// throws:
@@ -707,7 +709,7 @@ SWIFT_CLASS("_TtC26PulseLabsFlightRecorderSDK17FlightRecorderSDK")
 ///     <code>FlightRecorderSDKError.failedToStart</code>: Thrown when the SDK fails to start.
 ///   </li>
 /// </ul>
-+ (BOOL)triggerCaptureRecordingAndReturnError:(NSError * _Nullable * _Nullable)error;
++ (BOOL)triggerCaptureRecordingWithSurveyName:(NSString * _Nullable)surveyName error:(NSError * _Nullable * _Nullable)error;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -724,11 +726,13 @@ SWIFT_CLASS("_TtC26PulseLabsFlightRecorderSDK17FlightRecorderSDK")
 
 
 
+
 @class UIEvent;
 
 @interface UIWindow (SWIFT_EXTENSION(PulseLabsFlightRecorderSDK))
 - (void)swizzled_motionEnded:(enum UIEventSubtype)motion with:(UIEvent * _Nullable)_;
 @end
+
 
 #endif
 #if __has_attribute(external_source_symbol)
