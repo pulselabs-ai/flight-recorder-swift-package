@@ -1,6 +1,3 @@
-<p>
-	<img src="docs/images/FlightRecorder_icon.png" height="60" alt="Package Logo" />
-</p>
 <p align="center">
   <img src="docs/images/FlightRecorder_PulseLogo_Stacked.svg"/>
 </p>
