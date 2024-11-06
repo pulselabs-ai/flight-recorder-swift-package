@@ -1,18 +1,25 @@
 {
   "ABIRoot": {
     "kind": "Root",
-    "name": "TopLevel",
-    "printedName": "TopLevel",
+    "name": "PulseLabsFlightRecorderSDK",
+    "printedName": "PulseLabsFlightRecorderSDK",
     "children": [
       {
         "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
+        "name": "os.log",
+        "printedName": "os.log",
         "declKind": "Import",
         "moduleName": "PulseLabsFlightRecorderSDK",
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "PulseLabsFlightRecorderSDK"
       },
       {
         "kind": "Import",
@@ -23,6 +30,13 @@
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "os.log",
+        "printedName": "os.log",
+        "declKind": "Import",
+        "moduleName": "PulseLabsFlightRecorderSDK"
       },
       {
         "kind": "Import",
@@ -2821,6 +2835,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -2883,8 +2911,25 @@
       },
       {
         "kind": "Import",
+        "name": "os.log",
+        "printedName": "os.log",
+        "declKind": "Import",
+        "moduleName": "PulseLabsFlightRecorderSDK"
+      },
+      {
+        "kind": "Import",
         "name": "SwiftUI",
         "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "PulseLabsFlightRecorderSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "PulseLabsFlightRecorderSDK",
         "declAttributes": [
@@ -3137,6 +3182,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Error",
             "printedName": "Error",
             "usr": "s:s5ErrorP",
@@ -3170,6 +3229,13 @@
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "os.log",
+        "printedName": "os.log",
+        "declKind": "Import",
+        "moduleName": "PulseLabsFlightRecorderSDK"
       },
       {
         "kind": "Import",
@@ -3428,6 +3494,22 @@
         "moduleName": "PulseLabsFlightRecorderSDK",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
         ]
       },
       {
@@ -3607,12 +3689,313 @@
       },
       {
         "kind": "Import",
-        "name": "SwiftUI",
-        "printedName": "SwiftUI",
+        "name": "Combine",
+        "printedName": "Combine",
         "declKind": "Import",
         "moduleName": "PulseLabsFlightRecorderSDK",
         "declAttributes": [
           "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "os.log",
+        "printedName": "os.log",
+        "declKind": "Import",
+        "moduleName": "PulseLabsFlightRecorderSDK"
+      },
+      {
+        "kind": "Import",
+        "name": "SwiftUI",
+        "printedName": "SwiftUI",
+        "declKind": "Import",
+        "moduleName": "PulseLabsFlightRecorderSDK"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "RecordingStatus",
+        "printedName": "RecordingStatus",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "started",
+            "printedName": "started",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PulseLabsFlightRecorderSDK.RecordingStatus.Type) -> PulseLabsFlightRecorderSDK.RecordingStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RecordingStatus",
+                    "printedName": "PulseLabsFlightRecorderSDK.RecordingStatus",
+                    "usr": "s:26PulseLabsFlightRecorderSDK15RecordingStatusO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PulseLabsFlightRecorderSDK.RecordingStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RecordingStatus",
+                        "printedName": "PulseLabsFlightRecorderSDK.RecordingStatus",
+                        "usr": "s:26PulseLabsFlightRecorderSDK15RecordingStatusO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:26PulseLabsFlightRecorderSDK15RecordingStatusO7startedyA2CmF",
+            "mangledName": "$s26PulseLabsFlightRecorderSDK15RecordingStatusO7startedyA2CmF",
+            "moduleName": "PulseLabsFlightRecorderSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "paused",
+            "printedName": "paused",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PulseLabsFlightRecorderSDK.RecordingStatus.Type) -> PulseLabsFlightRecorderSDK.RecordingStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RecordingStatus",
+                    "printedName": "PulseLabsFlightRecorderSDK.RecordingStatus",
+                    "usr": "s:26PulseLabsFlightRecorderSDK15RecordingStatusO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PulseLabsFlightRecorderSDK.RecordingStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RecordingStatus",
+                        "printedName": "PulseLabsFlightRecorderSDK.RecordingStatus",
+                        "usr": "s:26PulseLabsFlightRecorderSDK15RecordingStatusO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:26PulseLabsFlightRecorderSDK15RecordingStatusO6pausedyA2CmF",
+            "mangledName": "$s26PulseLabsFlightRecorderSDK15RecordingStatusO6pausedyA2CmF",
+            "moduleName": "PulseLabsFlightRecorderSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "stopped",
+            "printedName": "stopped",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PulseLabsFlightRecorderSDK.RecordingStatus.Type) -> PulseLabsFlightRecorderSDK.RecordingStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RecordingStatus",
+                    "printedName": "PulseLabsFlightRecorderSDK.RecordingStatus",
+                    "usr": "s:26PulseLabsFlightRecorderSDK15RecordingStatusO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PulseLabsFlightRecorderSDK.RecordingStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RecordingStatus",
+                        "printedName": "PulseLabsFlightRecorderSDK.RecordingStatus",
+                        "usr": "s:26PulseLabsFlightRecorderSDK15RecordingStatusO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:26PulseLabsFlightRecorderSDK15RecordingStatusO7stoppedyA2CmF",
+            "mangledName": "$s26PulseLabsFlightRecorderSDK15RecordingStatusO7stoppedyA2CmF",
+            "moduleName": "PulseLabsFlightRecorderSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "pending",
+            "printedName": "pending",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PulseLabsFlightRecorderSDK.RecordingStatus.Type) -> PulseLabsFlightRecorderSDK.RecordingStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RecordingStatus",
+                    "printedName": "PulseLabsFlightRecorderSDK.RecordingStatus",
+                    "usr": "s:26PulseLabsFlightRecorderSDK15RecordingStatusO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PulseLabsFlightRecorderSDK.RecordingStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RecordingStatus",
+                        "printedName": "PulseLabsFlightRecorderSDK.RecordingStatus",
+                        "usr": "s:26PulseLabsFlightRecorderSDK15RecordingStatusO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:26PulseLabsFlightRecorderSDK15RecordingStatusO7pendingyA2CmF",
+            "mangledName": "$s26PulseLabsFlightRecorderSDK15RecordingStatusO7pendingyA2CmF",
+            "moduleName": "PulseLabsFlightRecorderSDK"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "PulseLabsFlightRecorderSDK.RecordingStatus?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RecordingStatus",
+                    "printedName": "PulseLabsFlightRecorderSDK.RecordingStatus",
+                    "usr": "s:26PulseLabsFlightRecorderSDK15RecordingStatusO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:26PulseLabsFlightRecorderSDK15RecordingStatusO8rawValueACSgSS_tcfc",
+            "mangledName": "$s26PulseLabsFlightRecorderSDK15RecordingStatusO8rawValueACSgSS_tcfc",
+            "moduleName": "PulseLabsFlightRecorderSDK",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:26PulseLabsFlightRecorderSDK15RecordingStatusO8rawValueSSvp",
+            "mangledName": "$s26PulseLabsFlightRecorderSDK15RecordingStatusO8rawValueSSvp",
+            "moduleName": "PulseLabsFlightRecorderSDK",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:26PulseLabsFlightRecorderSDK15RecordingStatusO8rawValueSSvg",
+                "mangledName": "$s26PulseLabsFlightRecorderSDK15RecordingStatusO8rawValueSSvg",
+                "moduleName": "PulseLabsFlightRecorderSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:26PulseLabsFlightRecorderSDK15RecordingStatusO",
+        "mangledName": "$s26PulseLabsFlightRecorderSDK15RecordingStatusO",
+        "moduleName": "PulseLabsFlightRecorderSDK",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "enumRawTypeName": "String",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
         ]
       },
       {
@@ -3985,6 +4368,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -4170,6 +4567,13 @@
       },
       {
         "kind": "Import",
+        "name": "os.log",
+        "printedName": "os.log",
+        "declKind": "Import",
+        "moduleName": "PulseLabsFlightRecorderSDK"
+      },
+      {
+        "kind": "Import",
         "name": "SwiftUI",
         "printedName": "SwiftUI",
         "declKind": "Import",
@@ -4284,6 +4688,13 @@
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "os.log",
+        "printedName": "os.log",
+        "declKind": "Import",
+        "moduleName": "PulseLabsFlightRecorderSDK"
       },
       {
         "kind": "Import",
@@ -4405,6 +4816,13 @@
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "os.log",
+        "printedName": "os.log",
+        "declKind": "Import",
+        "moduleName": "PulseLabsFlightRecorderSDK"
       },
       {
         "kind": "Import",
@@ -4570,6 +4988,13 @@
       },
       {
         "kind": "Import",
+        "name": "os.log",
+        "printedName": "os.log",
+        "declKind": "Import",
+        "moduleName": "PulseLabsFlightRecorderSDK"
+      },
+      {
+        "kind": "Import",
         "name": "SwiftUI",
         "printedName": "SwiftUI",
         "declKind": "Import",
@@ -4634,6 +5059,13 @@
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "os.log",
+        "printedName": "os.log",
+        "declKind": "Import",
+        "moduleName": "PulseLabsFlightRecorderSDK"
       },
       {
         "kind": "Import",
@@ -4705,6 +5137,13 @@
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "os.log",
+        "printedName": "os.log",
+        "declKind": "Import",
+        "moduleName": "PulseLabsFlightRecorderSDK"
       },
       {
         "kind": "Import",
@@ -4832,6 +5271,13 @@
       },
       {
         "kind": "Import",
+        "name": "os.log",
+        "printedName": "os.log",
+        "declKind": "Import",
+        "moduleName": "PulseLabsFlightRecorderSDK"
+      },
+      {
+        "kind": "Import",
         "name": "SwiftUI",
         "printedName": "SwiftUI",
         "declKind": "Import",
@@ -4878,62 +5324,6 @@
         "moduleName": "PulseLabsFlightRecorderSDK",
         "declAttributes": [
           "RawDocComment"
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "SessionApi",
-        "printedName": "SessionApi",
-        "children": [
-          {
-            "kind": "Function",
-            "name": "data",
-            "printedName": "data(for:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Tuple",
-                "printedName": "(Foundation.Data, Foundation.URLResponse)",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Data",
-                    "printedName": "Foundation.Data",
-                    "usr": "s:10Foundation4DataV"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "URLResponse",
-                    "printedName": "Foundation.URLResponse",
-                    "usr": "c:objc(cs)NSURLResponse"
-                  }
-                ]
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "URLRequest",
-                "printedName": "Foundation.URLRequest",
-                "usr": "s:10Foundation10URLRequestV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:26PulseLabsFlightRecorderSDK10SessionApiP4data3for10Foundation4DataV_So13NSURLResponseCtAF10URLRequestV_tYaKF",
-            "mangledName": "$s26PulseLabsFlightRecorderSDK10SessionApiP4data3for10Foundation4DataV_So13NSURLResponseCtAF10URLRequestV_tYaKF",
-            "moduleName": "PulseLabsFlightRecorderSDK",
-            "genericSig": "<τ_0_0 where τ_0_0 : PulseLabsFlightRecorderSDK.SessionApi>",
-            "sugared_genericSig": "<Self where Self : PulseLabsFlightRecorderSDK.SessionApi>",
-            "protocolReq": true,
-            "throwing": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Protocol",
-        "usr": "s:26PulseLabsFlightRecorderSDK10SessionApiP",
-        "mangledName": "$s26PulseLabsFlightRecorderSDK10SessionApiP",
-        "moduleName": "PulseLabsFlightRecorderSDK",
-        "declAttributes": [
-          "AccessControl"
         ]
       },
       {
@@ -5034,6 +5424,7 @@
             "isOpen": true,
             "declAttributes": [
               "Dynamic",
+              "Preconcurrency",
               "Custom",
               "AccessControl",
               "ObjC"
@@ -5049,6 +5440,7 @@
         "intro_iOS": "2.0",
         "objc_name": "UIWindow",
         "declAttributes": [
+          "Preconcurrency",
           "Available",
           "ObjC",
           "NonSendable",
@@ -5064,6 +5456,20 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Equatable",
@@ -5136,16 +5542,30 @@
     {
       "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/UI\/Views\/Shared\/UploadingView.swift",
       "kind": "FloatLiteral",
-      "offset": 231,
+      "offset": 245,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/UI\/Views\/Shared\/UploadingView.swift",
       "kind": "BooleanLiteral",
-      "offset": 265,
+      "offset": 279,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/UI\/Views\/Shared\/UploadingView.swift",
+      "kind": "StringLiteral",
+      "offset": 808,
+      "length": 41,
+      "value": "\"ai.pulselabs.PulseLabsFlightRecorderSDK\""
+    },
+    {
+      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/UI\/Views\/Shared\/UploadingView.swift",
+      "kind": "StringLiteral",
+      "offset": 869,
+      "length": 6,
+      "value": "\"main\""
     },
     {
       "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Managers\/PulseClipBufferingManager.swift",
@@ -5631,977 +6051,67 @@
       "value": "511"
     },
     {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1666,
-      "length": 3,
-      "value": "100"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1822,
-      "length": 3,
-      "value": "101"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1985,
-      "length": 3,
-      "value": "102"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2102,
-      "length": 3,
-      "value": "200"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2222,
-      "length": 3,
-      "value": "201"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2356,
-      "length": 3,
-      "value": "202"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2601,
-      "length": 3,
-      "value": "203"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2728,
-      "length": 3,
-      "value": "204"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2862,
-      "length": 3,
-      "value": "205"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3027,
-      "length": 3,
-      "value": "206"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3225,
-      "length": 3,
-      "value": "207"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3413,
-      "length": 3,
-      "value": "208"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3629,
-      "length": 3,
-      "value": "226"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3805,
-      "length": 3,
-      "value": "300"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3932,
-      "length": 3,
-      "value": "301"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3995,
-      "length": 3,
-      "value": "302"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4119,
-      "length": 3,
-      "value": "303"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4307,
-      "length": 3,
-      "value": "304"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4461,
-      "length": 3,
-      "value": "305"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4598,
-      "length": 3,
-      "value": "306"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4710,
-      "length": 3,
-      "value": "307"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4847,
-      "length": 3,
-      "value": "308"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5020,
-      "length": 3,
-      "value": "400"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5201,
-      "length": 3,
-      "value": "401"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5314,
-      "length": 3,
-      "value": "402"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5439,
-      "length": 3,
-      "value": "403"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5562,
-      "length": 3,
-      "value": "404"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5759,
-      "length": 3,
-      "value": "405"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5943,
-      "length": 3,
-      "value": "406"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 6084,
-      "length": 3,
-      "value": "407"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 6187,
-      "length": 3,
-      "value": "408"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 6382,
-      "length": 3,
-      "value": "409"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 6513,
-      "length": 3,
-      "value": "410"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 6670,
-      "length": 3,
-      "value": "411"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 6824,
-      "length": 3,
-      "value": "412"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 6952,
-      "length": 3,
-      "value": "413"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 7058,
-      "length": 3,
-      "value": "414"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 7210,
-      "length": 3,
-      "value": "415"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 7383,
-      "length": 3,
-      "value": "416"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 7522,
-      "length": 3,
-      "value": "417"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 7623,
-      "length": 3,
-      "value": "418"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 7765,
-      "length": 3,
-      "value": "421"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 7914,
-      "length": 3,
-      "value": "422"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 8002,
-      "length": 3,
-      "value": "423"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 8140,
-      "length": 3,
-      "value": "424"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 8300,
-      "length": 3,
-      "value": "426"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 8427,
-      "length": 3,
-      "value": "428"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 8549,
-      "length": 3,
-      "value": "429"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 8776,
-      "length": 3,
-      "value": "431"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 8927,
-      "length": 3,
-      "value": "444"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 9146,
-      "length": 3,
-      "value": "451"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 9329,
-      "length": 3,
-      "value": "495"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 9514,
-      "length": 3,
-      "value": "496"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 9731,
-      "length": 3,
-      "value": "497"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 9883,
-      "length": 3,
-      "value": "499"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 10109,
-      "length": 3,
-      "value": "500"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 10271,
-      "length": 3,
-      "value": "501"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 10423,
-      "length": 3,
-      "value": "502"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 10614,
-      "length": 3,
-      "value": "503"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 10779,
-      "length": 3,
-      "value": "504"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 10929,
-      "length": 3,
-      "value": "505"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 11081,
-      "length": 3,
-      "value": "506"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 11229,
-      "length": 3,
-      "value": "507"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 11349,
-      "length": 3,
-      "value": "508"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 11477,
-      "length": 3,
-      "value": "510"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 11621,
-      "length": 3,
-      "value": "511"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1666,
-      "length": 3,
-      "value": "100"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1822,
-      "length": 3,
-      "value": "101"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1985,
-      "length": 3,
-      "value": "102"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2102,
-      "length": 3,
-      "value": "200"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2222,
-      "length": 3,
-      "value": "201"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2356,
-      "length": 3,
-      "value": "202"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2601,
-      "length": 3,
-      "value": "203"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2728,
-      "length": 3,
-      "value": "204"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 2862,
-      "length": 3,
-      "value": "205"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3027,
-      "length": 3,
-      "value": "206"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3225,
-      "length": 3,
-      "value": "207"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3413,
-      "length": 3,
-      "value": "208"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3629,
-      "length": 3,
-      "value": "226"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3805,
-      "length": 3,
-      "value": "300"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3932,
-      "length": 3,
-      "value": "301"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3995,
-      "length": 3,
-      "value": "302"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4119,
-      "length": 3,
-      "value": "303"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4307,
-      "length": 3,
-      "value": "304"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4461,
-      "length": 3,
-      "value": "305"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4598,
-      "length": 3,
-      "value": "306"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4710,
-      "length": 3,
-      "value": "307"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 4847,
-      "length": 3,
-      "value": "308"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5020,
-      "length": 3,
-      "value": "400"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5201,
-      "length": 3,
-      "value": "401"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5314,
-      "length": 3,
-      "value": "402"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5439,
-      "length": 3,
-      "value": "403"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5562,
-      "length": 3,
-      "value": "404"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5759,
-      "length": 3,
-      "value": "405"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 5943,
-      "length": 3,
-      "value": "406"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 6084,
-      "length": 3,
-      "value": "407"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 6187,
-      "length": 3,
-      "value": "408"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 6382,
-      "length": 3,
-      "value": "409"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 6513,
-      "length": 3,
-      "value": "410"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 6670,
-      "length": 3,
-      "value": "411"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 6824,
-      "length": 3,
-      "value": "412"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 6952,
-      "length": 3,
-      "value": "413"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 7058,
-      "length": 3,
-      "value": "414"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 7210,
-      "length": 3,
-      "value": "415"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 7383,
-      "length": 3,
-      "value": "416"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 7522,
-      "length": 3,
-      "value": "417"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 7623,
-      "length": 3,
-      "value": "418"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 7765,
-      "length": 3,
-      "value": "421"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 7914,
-      "length": 3,
-      "value": "422"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 8002,
-      "length": 3,
-      "value": "423"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 8140,
-      "length": 3,
-      "value": "424"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 8300,
-      "length": 3,
-      "value": "426"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 8427,
-      "length": 3,
-      "value": "428"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 8549,
-      "length": 3,
-      "value": "429"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 8776,
-      "length": 3,
-      "value": "431"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 8927,
-      "length": 3,
-      "value": "444"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 9146,
-      "length": 3,
-      "value": "451"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 9329,
-      "length": 3,
-      "value": "495"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 9514,
-      "length": 3,
-      "value": "496"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 9731,
-      "length": 3,
-      "value": "497"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 9883,
-      "length": 3,
-      "value": "499"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 10109,
-      "length": 3,
-      "value": "500"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 10271,
-      "length": 3,
-      "value": "501"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 10423,
-      "length": 3,
-      "value": "502"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 10614,
-      "length": 3,
-      "value": "503"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 10779,
-      "length": 3,
-      "value": "504"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 10929,
-      "length": 3,
-      "value": "505"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 11081,
-      "length": 3,
-      "value": "506"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 11229,
-      "length": 3,
-      "value": "507"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 11349,
-      "length": 3,
-      "value": "508"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 11477,
-      "length": 3,
-      "value": "510"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HTTPStatusCode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 11621,
-      "length": 3,
-      "value": "511"
-    },
-    {
       "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/UploadManager.swift",
       "kind": "StringLiteral",
-      "offset": 250,
+      "offset": 264,
       "length": 11,
       "value": "\"video\/mp4\""
     },
     {
       "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/UploadManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 1116,
+      "offset": 1130,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/UploadManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 1225,
+      "offset": 1239,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/UploadManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 1280,
+      "offset": 1294,
       "length": 3,
       "value": "120"
     },
     {
       "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/UploadManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 1361,
+      "offset": 1375,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/UploadManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 1422,
+      "offset": 1436,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/UploadManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 1480,
+      "offset": 1494,
       "length": 4,
       "value": "true"
+    },
+    {
+      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/UploadManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2164,
+      "length": 41,
+      "value": "\"ai.pulselabs.PulseLabsFlightRecorderSDK\""
+    },
+    {
+      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/UploadManager.swift",
+      "kind": "StringLiteral",
+      "offset": 2225,
+      "length": 9,
+      "value": "\"network\""
     },
     {
       "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/UI\/Resources\/Shared\/PulseCircularProgress.swift",
@@ -6793,7 +6303,7 @@
       "value": "1"
     },
     {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/CustomSurvey\/Models\/Page.swift",
+      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Models\/Page.swift",
       "kind": "Array",
       "offset": 247,
       "length": 2,
@@ -6802,93 +6312,128 @@
     {
       "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/FlightRecorderSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 407,
+      "offset": 782,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/FlightRecorderSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 443,
+      "offset": 818,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/FlightRecorderSDK.swift",
       "kind": "StringLiteral",
-      "offset": 639,
+      "offset": 1014,
       "length": 39,
       "value": "\"PULSELABS_FLIGHTRECORDER_FIRST_LAUNCH\""
     },
     {
       "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/FlightRecorderSDK.swift",
       "kind": "StringLiteral",
-      "offset": 729,
+      "offset": 1104,
       "length": 49,
       "value": "\"PULSELABS_FLIGHTRECORDER_FIRST_LAUNCH_TIMESTAMP\""
     },
     {
       "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/FlightRecorderSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 1207,
+      "length": 41,
+      "value": "\"ai.pulselabs.PulseLabsFlightRecorderSDK\""
+    },
+    {
+      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/FlightRecorderSDK.swift",
+      "kind": "StringLiteral",
+      "offset": 1268,
+      "length": 6,
+      "value": "\"main\""
+    },
+    {
+      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/FlightRecorderSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 999,
+      "offset": 1622,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/FlightRecorderSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 1343,
+      "offset": 1891,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/FlightRecorderSDK.swift",
       "kind": "StringLiteral",
-      "offset": 1376,
+      "offset": 1924,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/FlightRecorderSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 1409,
+      "offset": 1957,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/FlightRecorderSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 1750,
+      "offset": 2298,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/FlightRecorderSDK.swift",
       "kind": "StringLiteral",
-      "offset": 1783,
+      "offset": 2331,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/FlightRecorderSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 1816,
+      "offset": 2364,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/FlightRecorderSDK.swift",
       "kind": "BooleanLiteral",
-      "offset": 4234,
+      "offset": 2797,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/FlightRecorderSDK.swift",
       "kind": "StringLiteral",
-      "offset": 233,
-      "length": 17,
-      "value": "\"PulseLabsFlightRecorderSDK.FlightRecorderSDK\""
+      "offset": 2830,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/FlightRecorderSDK.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2863,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/FlightRecorderSDK.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4632,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/FlightRecorderSDK.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5474,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/ScreenRecorder\/ScreenshotDatastore.swift",
@@ -6959,27 +6504,6 @@
       "offset": 3889,
       "length": 5,
       "value": "false"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/UI\/Resources\/Styling\/Styling.swift",
-      "kind": "StringLiteral",
-      "offset": 475,
-      "length": 13,
-      "value": "\"Capitalized\""
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/UI\/Resources\/Styling\/Styling.swift",
-      "kind": "StringLiteral",
-      "offset": 510,
-      "length": 11,
-      "value": "\"Uppercase\""
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/UI\/Resources\/Styling\/Styling.swift",
-      "kind": "StringLiteral",
-      "offset": 543,
-      "length": 11,
-      "value": "\"Lowercase\""
     },
     {
       "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/UI\/Resources\/Styling\/Styling.swift",
@@ -7138,9 +6662,23 @@
     {
       "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Managers\/ErrorHandler.swift",
       "kind": "StringLiteral",
-      "offset": 206,
+      "offset": 220,
       "length": 29,
       "value": "\"Sorry! Something went wrong\""
+    },
+    {
+      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Managers\/ErrorHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 302,
+      "length": 41,
+      "value": "\"ai.pulselabs.PulseLabsFlightRecorderSDK\""
+    },
+    {
+      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Managers\/ErrorHandler.swift",
+      "kind": "StringLiteral",
+      "offset": 363,
+      "length": 7,
+      "value": "\"error\""
     },
     {
       "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/UI\/Views\/Main\/ChooseReportType.swift",
@@ -7200,108 +6738,94 @@
     },
     {
       "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HttpSession.swift",
+      "kind": "StringLiteral",
+      "offset": 366,
+      "length": 41,
+      "value": "\"ai.pulselabs.PulseLabsFlightRecorderSDK\""
+    },
+    {
+      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HttpSession.swift",
+      "kind": "StringLiteral",
+      "offset": 427,
+      "length": 9,
+      "value": "\"network\""
+    },
+    {
+      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HttpSession.swift",
       "kind": "Dictionary",
-      "offset": 747,
+      "offset": 891,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HttpSession.swift",
       "kind": "Dictionary",
-      "offset": 780,
+      "offset": 924,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HttpSession.swift",
       "kind": "Dictionary",
-      "offset": 974,
+      "offset": 1118,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HttpSession.swift",
       "kind": "Dictionary",
-      "offset": 1007,
+      "offset": 1151,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HttpSession.swift",
       "kind": "Dictionary",
-      "offset": 1235,
+      "offset": 1379,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HttpSession.swift",
       "kind": "Dictionary",
-      "offset": 1268,
+      "offset": 1412,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HttpSession.swift",
       "kind": "Dictionary",
-      "offset": 1464,
+      "offset": 1608,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HttpSession.swift",
       "kind": "Dictionary",
-      "offset": 1497,
+      "offset": 1641,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HttpSession.swift",
       "kind": "Dictionary",
-      "offset": 1746,
+      "offset": 1890,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Networking\/Session\/HttpSession.swift",
       "kind": "Dictionary",
-      "offset": 1779,
+      "offset": 1923,
       "length": 3,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/CustomSurvey\/Models\/SurveySchema.swift",
+      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Models\/SurveySchema.swift",
       "kind": "Array",
       "offset": 235,
       "length": 2,
       "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/ScreenRecorder\/DiskStorage.swift",
-      "kind": "IntegerLiteral",
-      "offset": 105,
-      "length": 3,
-      "value": "101"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/ScreenRecorder\/DiskStorage.swift",
-      "kind": "IntegerLiteral",
-      "offset": 154,
-      "length": 3,
-      "value": "102"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/ScreenRecorder\/DiskStorage.swift",
-      "kind": "IntegerLiteral",
-      "offset": 105,
-      "length": 3,
-      "value": "101"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/ScreenRecorder\/DiskStorage.swift",
-      "kind": "IntegerLiteral",
-      "offset": 154,
-      "length": 3,
-      "value": "102"
     },
     {
       "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/ScreenRecorder\/DiskStorage.swift",
@@ -7355,30 +6879,30 @@
     {
       "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/UI\/UIManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 1315,
+      "offset": 1329,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/UI\/UIManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 1481,
+      "offset": 1495,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/UI\/UIManager.swift",
       "kind": "StringLiteral",
-      "offset": 7145,
-      "length": 23,
-      "value": "\"PulseLabsFlightRecorderSDK.CustomHostingController\""
+      "offset": 1731,
+      "length": 41,
+      "value": "\"ai.pulselabs.PulseLabsFlightRecorderSDK\""
     },
     {
       "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/UI\/UIManager.swift",
       "kind": "StringLiteral",
-      "offset": 7145,
-      "length": 23,
-      "value": "\"PulseLabsFlightRecorderSDK.CustomHostingController\""
+      "offset": 1792,
+      "length": 11,
+      "value": "\"uimanager\""
     },
     {
       "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Models\/Draft.swift",
@@ -7393,174 +6917,6 @@
       "offset": 2231,
       "length": 5,
       "value": "false"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/ScreenRecorder\/VideoEncoder.swift",
-      "kind": "IntegerLiteral",
-      "offset": 201,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/ScreenRecorder\/VideoEncoder.swift",
-      "kind": "IntegerLiteral",
-      "offset": 246,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/ScreenRecorder\/VideoEncoder.swift",
-      "kind": "IntegerLiteral",
-      "offset": 288,
-      "length": 1,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/ScreenRecorder\/VideoEncoder.swift",
-      "kind": "IntegerLiteral",
-      "offset": 344,
-      "length": 1,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/ScreenRecorder\/VideoEncoder.swift",
-      "kind": "IntegerLiteral",
-      "offset": 379,
-      "length": 1,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/ScreenRecorder\/VideoEncoder.swift",
-      "kind": "IntegerLiteral",
-      "offset": 424,
-      "length": 1,
-      "value": "6"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/ScreenRecorder\/VideoEncoder.swift",
-      "kind": "IntegerLiteral",
-      "offset": 463,
-      "length": 1,
-      "value": "7"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/ScreenRecorder\/VideoEncoder.swift",
-      "kind": "IntegerLiteral",
-      "offset": 500,
-      "length": 1,
-      "value": "8"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/ScreenRecorder\/VideoEncoder.swift",
-      "kind": "IntegerLiteral",
-      "offset": 527,
-      "length": 1,
-      "value": "9"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/ScreenRecorder\/VideoEncoder.swift",
-      "kind": "IntegerLiteral",
-      "offset": 565,
-      "length": 2,
-      "value": "10"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/ScreenRecorder\/VideoEncoder.swift",
-      "kind": "IntegerLiteral",
-      "offset": 595,
-      "length": 2,
-      "value": "11"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/ScreenRecorder\/VideoEncoder.swift",
-      "kind": "IntegerLiteral",
-      "offset": 623,
-      "length": 2,
-      "value": "12"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/ScreenRecorder\/VideoEncoder.swift",
-      "kind": "IntegerLiteral",
-      "offset": 201,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/ScreenRecorder\/VideoEncoder.swift",
-      "kind": "IntegerLiteral",
-      "offset": 246,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/ScreenRecorder\/VideoEncoder.swift",
-      "kind": "IntegerLiteral",
-      "offset": 288,
-      "length": 1,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/ScreenRecorder\/VideoEncoder.swift",
-      "kind": "IntegerLiteral",
-      "offset": 344,
-      "length": 1,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/ScreenRecorder\/VideoEncoder.swift",
-      "kind": "IntegerLiteral",
-      "offset": 379,
-      "length": 1,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/ScreenRecorder\/VideoEncoder.swift",
-      "kind": "IntegerLiteral",
-      "offset": 424,
-      "length": 1,
-      "value": "6"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/ScreenRecorder\/VideoEncoder.swift",
-      "kind": "IntegerLiteral",
-      "offset": 463,
-      "length": 1,
-      "value": "7"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/ScreenRecorder\/VideoEncoder.swift",
-      "kind": "IntegerLiteral",
-      "offset": 500,
-      "length": 1,
-      "value": "8"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/ScreenRecorder\/VideoEncoder.swift",
-      "kind": "IntegerLiteral",
-      "offset": 527,
-      "length": 1,
-      "value": "9"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/ScreenRecorder\/VideoEncoder.swift",
-      "kind": "IntegerLiteral",
-      "offset": 565,
-      "length": 2,
-      "value": "10"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/ScreenRecorder\/VideoEncoder.swift",
-      "kind": "IntegerLiteral",
-      "offset": 595,
-      "length": 2,
-      "value": "11"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/ScreenRecorder\/VideoEncoder.swift",
-      "kind": "IntegerLiteral",
-      "offset": 623,
-      "length": 2,
-      "value": "12"
     },
     {
       "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/ScreenRecorder\/VideoEncoder.swift",
@@ -7745,27 +7101,6 @@
       "value": "\"INSIGHT\""
     },
     {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Enums\/EnhancementType.swift",
-      "kind": "StringLiteral",
-      "offset": 300,
-      "length": 11,
-      "value": "\"USABILITY\""
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Enums\/EnhancementType.swift",
-      "kind": "StringLiteral",
-      "offset": 420,
-      "length": 9,
-      "value": "\"FEATURE\""
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Enums\/EnhancementType.swift",
-      "kind": "StringLiteral",
-      "offset": 493,
-      "length": 9,
-      "value": "\"INSIGHT\""
-    },
-    {
       "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/ScreenRecorder\/UIImageManager.swift",
       "kind": "IntegerLiteral",
       "offset": 304,
@@ -7808,20 +7143,6 @@
       "value": "\"BUG\""
     },
     {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Enums\/UserClassification.swift",
-      "kind": "StringLiteral",
-      "offset": 313,
-      "length": 13,
-      "value": "\"ENHANCEMENT\""
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Enums\/UserClassification.swift",
-      "kind": "StringLiteral",
-      "offset": 397,
-      "length": 5,
-      "value": "\"BUG\""
-    },
-    {
       "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/UI\/Views\/Shared\/VideoEditorView.swift",
       "kind": "BooleanLiteral",
       "offset": 334,
@@ -7834,13 +7155,6 @@
       "offset": 378,
       "length": 5,
       "value": "false"
-    },
-    {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/UI\/Views\/Shared\/VideoEditorView.swift",
-      "kind": "StringLiteral",
-      "offset": 1964,
-      "length": 11,
-      "value": "\"PulseLabsFlightRecorderSDK.Coordinator\""
     },
     {
       "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/UI\/Views\/Shared\/Sheets\/EnableFeedbackSheet.swift",
@@ -7917,7 +7231,7 @@
       "kind": "StringLiteral",
       "offset": 17,
       "length": 7,
-      "value": "\"1.3.0\""
+      "value": "\"1.4.0\""
     },
     {
       "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/Config.swift",
@@ -7950,19 +7264,33 @@
     {
       "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/ScreenRecorder\/ScreenRecorderManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 476,
+      "offset": 490,
       "length": 2,
       "value": "15"
     },
     {
       "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/ScreenRecorder\/ScreenRecorderManager.swift",
       "kind": "FloatLiteral",
-      "offset": 608,
+      "offset": 622,
       "length": 3,
       "value": "8.0"
     },
     {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/CustomSurvey\/Models\/Question.swift",
+      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/ScreenRecorder\/ScreenRecorderManager.swift",
+      "kind": "StringLiteral",
+      "offset": 679,
+      "length": 41,
+      "value": "\"ai.pulselabs.PulseLabsFlightRecorderSDK\""
+    },
+    {
+      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/ScreenRecorder\/ScreenRecorderManager.swift",
+      "kind": "StringLiteral",
+      "offset": 740,
+      "length": 16,
+      "value": "\"screenRecorder\""
+    },
+    {
+      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Models\/Question.swift",
       "kind": "Array",
       "offset": 252,
       "length": 2,
@@ -7997,32 +7325,46 @@
       "value": "\"MMM d, yyyy\""
     },
     {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/CustomSurvey\/ViewModels\/SurveyViewModel.swift",
+      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/ViewModels\/SurveyViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 284,
+      "offset": 298,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/CustomSurvey\/ViewModels\/SurveyViewModel.swift",
+      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/ViewModels\/SurveyViewModel.swift",
       "kind": "Array",
-      "offset": 502,
+      "offset": 516,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/CustomSurvey\/ViewModels\/SurveyViewModel.swift",
+      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/ViewModels\/SurveyViewModel.swift",
       "kind": "BooleanLiteral",
-      "offset": 696,
+      "offset": 710,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/CustomSurvey\/ViewModels\/SurveyViewModel.swift",
+      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/ViewModels\/SurveyViewModel.swift",
       "kind": "IntegerLiteral",
-      "offset": 756,
+      "offset": 770,
       "length": 1,
       "value": "0"
+    },
+    {
+      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/ViewModels\/SurveyViewModel.swift",
+      "kind": "StringLiteral",
+      "offset": 870,
+      "length": 41,
+      "value": "\"ai.pulselabs.PulseLabsFlightRecorderSDK\""
+    },
+    {
+      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/ViewModels\/SurveyViewModel.swift",
+      "kind": "StringLiteral",
+      "offset": 931,
+      "length": 8,
+      "value": "\"survey\""
     },
     {
       "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/UI\/Views\/Main\/Improvement\/SuggestImprovement.swift",
@@ -8144,6 +7486,20 @@
       "value": "false"
     },
     {
+      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Managers\/VideoExportManager.swift",
+      "kind": "StringLiteral",
+      "offset": 642,
+      "length": 41,
+      "value": "\"ai.pulselabs.PulseLabsFlightRecorderSDK\""
+    },
+    {
+      "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/InternalSDK\/Managers\/VideoExportManager.swift",
+      "kind": "StringLiteral",
+      "offset": 703,
+      "length": 7,
+      "value": "\"video\""
+    },
+    {
       "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/UI\/Views\/Shared\/Modals\/DeleteDraftConfirmationModal.swift",
       "kind": "BooleanLiteral",
       "offset": 1040,
@@ -8155,7 +7511,7 @@
       "kind": "IntegerLiteral",
       "offset": 208,
       "length": 2,
-      "value": "15"
+      "value": "30"
     },
     {
       "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/UI\/Views\/Shared\/MediaView.swift",
@@ -8174,7 +7530,7 @@
     {
       "filePath": "\/Users\/banie\/PulseRepo\/saas\/PulseLabsFlightRecorderSDK\/PulseLabsFlightRecorderSDK\/UI\/Views\/Shared\/MediaView.swift",
       "kind": "BooleanLiteral",
-      "offset": 4588,
+      "offset": 4601,
       "length": 5,
       "value": "false"
     },
