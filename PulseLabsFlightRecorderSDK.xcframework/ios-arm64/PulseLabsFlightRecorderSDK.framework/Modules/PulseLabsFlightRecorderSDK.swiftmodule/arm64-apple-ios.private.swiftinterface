@@ -1,7 +1,9 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
-// swift-module-flags: -target arm64-apple-ios15.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name PulseLabsFlightRecorderSDK
+// swift-compiler-version: Apple Swift version 6.0.2 effective-5.10 (swiftlang-6.0.2.1.2 clang-1600.0.26.4)
+// swift-module-flags: -target arm64-apple-ios16.6 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name PulseLabsFlightRecorderSDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import AVFoundation
+import AVKit
 import Combine
 import CoreMedia
 import DeveloperToolsSupport
@@ -18,6 +20,8 @@ import _AVKit_SwiftUI
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
+import os.log
+import os
 public enum HTTPStatusCode : Swift.Int, Swift.Error {
   case `continue`
   case switchingProtocols
@@ -98,7 +102,18 @@ public enum NetworkError : Swift.Error {
   case sessionError(errorMessage: Swift.String)
 }
 public struct FlightRecorderCustomFontsLib {
-  public init(ultraSmallBody: SwiftUI.Font?, ultraSmallBodySemiBold: SwiftUI.Font?, smallBody: SwiftUI.Font?, smallBodyBold: SwiftUI.Font?, smallBodySemiBold: SwiftUI.Font?, body: SwiftUI.Font?, bodyBold: SwiftUI.Font?, bodySemiBold: SwiftUI.Font?, headline4: SwiftUI.Font?, headline4Bold: SwiftUI.Font?, headline3Bold: SwiftUI.Font?)
+  public init(ultraSmallBody: SwiftUICore.Font?, ultraSmallBodySemiBold: SwiftUICore.Font?, smallBody: SwiftUICore.Font?, smallBodyBold: SwiftUICore.Font?, smallBodySemiBold: SwiftUICore.Font?, body: SwiftUICore.Font?, bodyBold: SwiftUICore.Font?, bodySemiBold: SwiftUICore.Font?, headline4: SwiftUICore.Font?, headline4Bold: SwiftUICore.Font?, headline3Bold: SwiftUICore.Font?)
+}
+public enum RecordingStatus : Swift.String {
+  case started
+  case paused
+  case stopped
+  case pending
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
 }
 @_hasMissingDesignatedInitializers @objc public class FlightRecorderSDK : ObjectiveC.NSObject {
   @objc public static func start(apiKey: Swift.String, automaticallyShowIntroduction: Swift.Bool = true)
@@ -113,14 +128,12 @@ extension PulseLabsFlightRecorderSDK.FlightRecorderSDK : Foundation.NSCopying {
   @objc dynamic public func copy(with _: ObjectiveC.NSZone? = nil) -> Any
 }
 extension UIKit.UIWindow {
-  @objc @_Concurrency.MainActor(unsafe) dynamic open func swizzled_motionEnded(_ motion: UIKit.UIEvent.EventSubtype, with _: UIKit.UIEvent?)
+  @objc @_Concurrency.MainActor @preconcurrency dynamic open func swizzled_motionEnded(_ motion: UIKit.UIEvent.EventSubtype, with _: UIKit.UIEvent?)
 }
 
-public protocol SessionApi {
-  #if compiler(>=5.3) && $AsyncAwait
-  func data(for request: Foundation.URLRequest) async throws -> (Foundation.Data, Foundation.URLResponse)
-  #endif
-}
 extension PulseLabsFlightRecorderSDK.HTTPStatusCode : Swift.Equatable {}
 extension PulseLabsFlightRecorderSDK.HTTPStatusCode : Swift.Hashable {}
 extension PulseLabsFlightRecorderSDK.HTTPStatusCode : Swift.RawRepresentable {}
+extension PulseLabsFlightRecorderSDK.RecordingStatus : Swift.Equatable {}
+extension PulseLabsFlightRecorderSDK.RecordingStatus : Swift.Hashable {}
+extension PulseLabsFlightRecorderSDK.RecordingStatus : Swift.RawRepresentable {}
