@@ -1,8 +1,5 @@
-<p>
-	<img src="https://softr-prod.imgix.net/applications/d9e2fdd7-844e-483f-a300-4d0fc6c67644/assets/aa69a423-4434-44de-a304-6187845ebf24.png" height="50"    alt="Package Logo" />
-</p>
 <p align="center">
-  <img src="https://softr-prod.imgix.net/applications/d9e2fdd7-844e-483f-a300-4d0fc6c67644/assets/1ae6e393-048d-4663-b41d-1a8dcd2789f3.svg"/>
+  <img src="docs/images/FlightRecorder_PulseLogo_Stacked.svg"/>
 </p>
 <p align="center">
 	<i>Delivering rich, cost-effective, in-context video of your users' experiences on your app. With just a shake, screenshot, or tap.</i>
@@ -17,9 +14,7 @@
 
    <img src="docs/images/install_step_1.webp" width="650" alt="Project (A), Add Files button (B), Add Files to Your Project (C)" />
 
-3. Verify that the version in **Minimum Deployments** is *15.0* or higher. If the version is lower than 15.0, update the minimum deployment to 15.0 or higher. If you wish to continue supporting users on devices running iOS lower than 15.0, refer to our [core documentation](https://pulselabs.gitbook.io/pulse-flightrecorder-docs/sdk-documentation/pulse-labs-flightrecorder-documentation/ios/install-the-sdk).
-
-    NB: 14.x is now end of life, and users of these devices will no longer receive security updates from Apple. 
+3. Verify that the version in **Minimum Deployments** is *16.0* or higher. If the version is lower than 16.0, update the minimum deployment to 15.0 or higher.
 
 4. In the menu bar, select **File** -> **Add Package Dependencies...**.
 
@@ -28,7 +23,9 @@
    <img src="docs/images/install_step_2.webp" width="650" alt="" />
 
 6. Select an appropriate **Dependency Rule**. We follow [Semantic Versioning 2.0.0](https://semver.org/), which means we will add bugfixes to the patch version (x.x.x), new features with no breaking changes to the minor version (x.x.x) and will always increase the major version (x.x.x) for breaking changes. We therefore recommend choosing **Up to Next Major Version**, to ensure you get all the patches and backwards compatible feature updates.
+
 7. Select **Add Package** to install the package.
+
 8. In the **Choose Package Products** for flight-recorder-pub-ios.git window, select **Add Package**.
 
 The SDK is now installed. It appears in the **Package Dependencies** list in the Project Navigator. 
