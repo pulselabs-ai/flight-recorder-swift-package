@@ -42,7 +42,7 @@
 		</data>
 		<key>Modules/PulseLabsFlightRecorderSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		l5KLk94iXuK3VSMBvf1mCiv88/A=
+		pauKD75DPc87rDreGhd6fb/FugE=
 		</data>
 		<key>Modules/PulseLabsFlightRecorderSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>Modules/PulseLabsFlightRecorderSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		wkgeLs+kUDDftE9tUlYgZnAXz2A=
+		LIg87w1I6vVetopVQDXrYdfZllQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -139,7 +139,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			iCv42tJcbDQ4Ne2pzI1Dwhzrs1J77+P+SiKaCcLBmko=
+			/LSlCOUuO1/nmvXG8ogLUEVvrNpjWvB8/tQJJ4TSUXc=
 			</data>
 		</dict>
 		<key>Modules/PulseLabsFlightRecorderSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
@@ -167,7 +167,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			f5pvlpAdYArWh+jVPhDc/cxj7BPFxhFxa5b2mkMkTp0=
+			ISDd0SKRlJb9FWI4GEAMr6qBlqsQWURDX8+6vEEPAzc=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
