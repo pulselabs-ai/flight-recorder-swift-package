@@ -316,7 +316,7 @@ SWIFT_CLASS("_TtC26PulseLabsFlightRecorderSDK17FlightRecorderSDK")
 ///
 /// <ul>
 ///   <li>
-///     <code>FlightRecorderSDKError.failedToStart</code>: Thrown when the SDK fails to start.
+///     <code>FlightRecorderSDKError.hasntBeenInitialized</code>: Thrown when the SDK fails to start.
 ///   </li>
 /// </ul>
 + (BOOL)showIntroductionUIAndReturnError:(NSError * _Nullable * _Nullable)error;
@@ -328,7 +328,7 @@ SWIFT_CLASS("_TtC26PulseLabsFlightRecorderSDK17FlightRecorderSDK")
 ///
 /// <ul>
 ///   <li>
-///     <code>FlightRecorderSDKError.failedToStart</code>: Thrown when the SDK fails to start.
+///     <code>FlightRecorderSDKError.hasntBeenInitialized</code>: Thrown when the SDK fails to start.
 ///   </li>
 /// </ul>
 + (BOOL)showIntroductionUIWithDisplayOnlyOnce:(BOOL)displayOnlyOnce error:(NSError * _Nullable * _Nullable)error;
@@ -338,7 +338,7 @@ SWIFT_CLASS("_TtC26PulseLabsFlightRecorderSDK17FlightRecorderSDK")
 ///
 /// <ul>
 ///   <li>
-///     <code>FlightRecorderSDKError.failedToStart</code>: Thrown when the SDK fails to start.
+///     <code>FlightRecorderSDKError.hasntBeenInitialized</code>: Thrown when the SDK fails to start.
 ///   </li>
 /// </ul>
 + (BOOL)triggerCaptureRecordingWithSurveyName:(NSString * _Nullable)surveyName error:(NSError * _Nullable * _Nullable)error;
