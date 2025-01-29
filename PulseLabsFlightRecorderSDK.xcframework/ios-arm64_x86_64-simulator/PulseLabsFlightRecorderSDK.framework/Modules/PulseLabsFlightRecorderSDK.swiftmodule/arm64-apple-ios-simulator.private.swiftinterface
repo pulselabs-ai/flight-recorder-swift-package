@@ -22,87 +22,7 @@ import _StringProcessing
 import _SwiftConcurrencyShims
 import os.log
 import os
-public enum HTTPStatusCode : Swift.Int, Swift.Error {
-  case `continue`
-  case switchingProtocols
-  case processing
-  case ok
-  case created
-  case accepted
-  case nonAuthoritativeInformation
-  case noContent
-  case resetContent
-  case partialContent
-  case multiStatus
-  case alreadyReported
-  case IMUsed
-  case multipleChoices
-  case movedPermanently
-  case found
-  case seeOther
-  case notModified
-  case useProxy
-  case switchProxy
-  case temporaryRedirect
-  case permenantRedirect
-  case badRequest
-  case unauthorized
-  case paymentRequired
-  case forbidden
-  case notFound
-  case methodNotAllowed
-  case notAcceptable
-  case proxyAuthenticationRequired
-  case requestTimeout
-  case conflict
-  case gone
-  case lengthRequired
-  case preconditionFailed
-  case payloadTooLarge
-  case URITooLong
-  case unsupportedMediaType
-  case rangeNotSatisfiable
-  case expectationFailed
-  case teapot
-  case misdirectedRequest
-  case unprocessableEntity
-  case locked
-  case failedDependency
-  case upgradeRequired
-  case preconditionRequired
-  case tooManyRequests
-  case requestHeaderFieldsTooLarge
-  case noResponse
-  case unavailableForLegalReasons
-  case SSLCertificateError
-  case SSLCertificateRequired
-  case HTTPRequestSentToHTTPSPort
-  case clientClosedRequest
-  case internalServerError
-  case notImplemented
-  case badGateway
-  case serviceUnavailable
-  case gatewayTimeout
-  case HTTPVersionNotSupported
-  case variantAlsoNegotiates
-  case insufficientStorage
-  case loopDetected
-  case notExtended
-  case networkAuthenticationRequired
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
-    get
-  }
-}
-public enum NetworkError : Swift.Error {
-  case urlIsInvalid
-  case httpError(status: PulseLabsFlightRecorderSDK.HTTPStatusCode, errorMessage: Swift.String)
-  case parsingError(errorMessage: Swift.String, dataInString: Swift.String)
-  case sessionError(errorMessage: Swift.String)
-}
 public struct FlightRecorderCustomFontsLib {
-  public init(ultraSmallBody: SwiftUICore.Font?, ultraSmallBodySemiBold: SwiftUICore.Font?, smallBody: SwiftUICore.Font?, smallBodyBold: SwiftUICore.Font?, smallBodySemiBold: SwiftUICore.Font?, body: SwiftUICore.Font?, bodyBold: SwiftUICore.Font?, bodySemiBold: SwiftUICore.Font?, headline4: SwiftUICore.Font?, headline4Bold: SwiftUICore.Font?, headline3Bold: SwiftUICore.Font?)
 }
 public enum RecordingStatus : Swift.String {
   case started
@@ -112,6 +32,15 @@ public enum RecordingStatus : Swift.String {
   public init?(rawValue: Swift.String)
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
+    get
+  }
+}
+public enum FlightRecorderSDKError : Swift.Error {
+  case hasntBeenInitialized
+  case unexpectedError
+  public static func == (a: PulseLabsFlightRecorderSDK.FlightRecorderSDKError, b: PulseLabsFlightRecorderSDK.FlightRecorderSDKError) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
     get
   }
 }
@@ -131,9 +60,8 @@ extension UIKit.UIWindow {
   @objc @_Concurrency.MainActor @preconcurrency dynamic open func swizzled_motionEnded(_ motion: UIKit.UIEvent.EventSubtype, with _: UIKit.UIEvent?)
 }
 
-extension PulseLabsFlightRecorderSDK.HTTPStatusCode : Swift.Equatable {}
-extension PulseLabsFlightRecorderSDK.HTTPStatusCode : Swift.Hashable {}
-extension PulseLabsFlightRecorderSDK.HTTPStatusCode : Swift.RawRepresentable {}
 extension PulseLabsFlightRecorderSDK.RecordingStatus : Swift.Equatable {}
 extension PulseLabsFlightRecorderSDK.RecordingStatus : Swift.Hashable {}
 extension PulseLabsFlightRecorderSDK.RecordingStatus : Swift.RawRepresentable {}
+extension PulseLabsFlightRecorderSDK.FlightRecorderSDKError : Swift.Equatable {}
+extension PulseLabsFlightRecorderSDK.FlightRecorderSDKError : Swift.Hashable {}
