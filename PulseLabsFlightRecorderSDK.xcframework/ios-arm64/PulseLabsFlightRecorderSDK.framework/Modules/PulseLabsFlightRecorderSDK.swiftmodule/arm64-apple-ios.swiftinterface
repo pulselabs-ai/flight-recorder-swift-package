@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0.2 effective-5.10 (swiftlang-6.0.2.1.2 clang-1600.0.26.4)
+// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
 // swift-module-flags: -target arm64-apple-ios16.6 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name PulseLabsFlightRecorderSDK
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface
 import AVFoundation
@@ -14,15 +14,35 @@ import Network
 import QuartzCore
 import ReplayKit
 import Swift
+import SwiftData
 import SwiftUI
 import UIKit
+import WebKit
 import _AVKit_SwiftUI
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
+import _SwiftData_SwiftUI
 import os.log
 import os
 public struct FlightRecorderCustomFontsLib {
+}
+@objc @_inheritsConvenienceInitializers public class FlightRecorderSDK : ObjectiveC.NSObject {
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension UIKit.UIWindow {
+  @objc @_Concurrency.MainActor @preconcurrency dynamic open func swizzled_motionEnded(_ motion: UIKit.UIEvent.EventSubtype, with _: UIKit.UIEvent?)
+}
+
+public enum FlightRecorderSDKError : Swift.Error {
+  case hasntBeenInitialized
+  case unexpectedError
+  public static func == (a: PulseLabsFlightRecorderSDK.FlightRecorderSDKError, b: PulseLabsFlightRecorderSDK.FlightRecorderSDKError) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
 }
 public enum RecordingStatus : Swift.String {
   case started
@@ -35,33 +55,16 @@ public enum RecordingStatus : Swift.String {
     get
   }
 }
-public enum FlightRecorderSDKError : Swift.Error {
-  case hasntBeenInitialized
-  case unexpectedError
-  public static func == (a: PulseLabsFlightRecorderSDK.FlightRecorderSDKError, b: PulseLabsFlightRecorderSDK.FlightRecorderSDKError) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
-    get
-  }
-}
-@_hasMissingDesignatedInitializers @objc public class FlightRecorderSDK : ObjectiveC.NSObject {
-  @objc public static func start(apiKey: Swift.String, automaticallyShowIntroduction: Swift.Bool = true)
-  @objc public static func start(apiKey: Swift.String, automaticallyShowIntroduction: Swift.Bool = true, platform: Swift.String = "", useReplayKit: Swift.Bool = false, surveyName: Swift.String? = nil)
-  public static func start(apiKey: Swift.String, automaticallyShowIntroduction: Swift.Bool = true, platform: Swift.String = "", useReplayKit: Swift.Bool = false, surveyName: Swift.String? = nil, customFontsLib: PulseLabsFlightRecorderSDK.FlightRecorderCustomFontsLib? = nil)
+extension PulseLabsFlightRecorderSDK.FlightRecorderSDK {
+  @objc @_Concurrency.MainActor public static func start(apiKey: Swift.String, automaticallyShowIntroduction: Swift.Bool = true)
+  @objc @_Concurrency.MainActor public static func start(apiKey: Swift.String, automaticallyShowIntroduction: Swift.Bool = true, platform: Swift.String = "", useReplayKit: Swift.Bool = false, surveyName: Swift.String? = nil)
+  @_Concurrency.MainActor public static func start(apiKey: Swift.String, automaticallyShowIntroduction: Swift.Bool = true, platform: Swift.String = "", useReplayKit: Swift.Bool = false, surveyName: Swift.String? = nil, customFontsLib: PulseLabsFlightRecorderSDK.FlightRecorderCustomFontsLib? = nil)
   @objc public static func showIntroductionUI() throws
   @objc public static func showIntroductionUI(displayOnlyOnce: Swift.Bool = true) throws
   @objc public static func triggerCaptureRecording(surveyName: Swift.String? = nil) throws
-  @objc deinit
 }
-extension PulseLabsFlightRecorderSDK.FlightRecorderSDK : Foundation.NSCopying {
-  @objc dynamic public func copy(with _: ObjectiveC.NSZone? = nil) -> Any
-}
-extension UIKit.UIWindow {
-  @objc @_Concurrency.MainActor @preconcurrency dynamic open func swizzled_motionEnded(_ motion: UIKit.UIEvent.EventSubtype, with _: UIKit.UIEvent?)
-}
-
+extension PulseLabsFlightRecorderSDK.FlightRecorderSDKError : Swift.Equatable {}
+extension PulseLabsFlightRecorderSDK.FlightRecorderSDKError : Swift.Hashable {}
 extension PulseLabsFlightRecorderSDK.RecordingStatus : Swift.Equatable {}
 extension PulseLabsFlightRecorderSDK.RecordingStatus : Swift.Hashable {}
 extension PulseLabsFlightRecorderSDK.RecordingStatus : Swift.RawRepresentable {}
-extension PulseLabsFlightRecorderSDK.FlightRecorderSDKError : Swift.Equatable {}
-extension PulseLabsFlightRecorderSDK.FlightRecorderSDKError : Swift.Hashable {}
