@@ -4,6 +4,15 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this project adheres to [Semantic Versioning](http://semver.org/).
 
+## [1.5.0] - 2025-04-09
+
+### Added
+
+- Implemented the new flow of using CaptureMethods with the new FlightRecorder portal
+- Refactor the code into several flavors using schemes
+- New app support for DairyStudy
+- Implement the new way of showing feedback form via Webview that uses survey-js
+
 ## [1.4.2] - 2025-01-29
 
 ### Added
