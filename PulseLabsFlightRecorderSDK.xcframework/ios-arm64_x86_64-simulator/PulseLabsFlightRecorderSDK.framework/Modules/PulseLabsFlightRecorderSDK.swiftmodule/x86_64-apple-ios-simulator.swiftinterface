@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.10 clang-1600.0.30.1)
-// swift-module-flags: -target x86_64-apple-ios16.6-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name PulseLabsFlightRecorderSDK
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface
+// swift-compiler-version: Apple Swift version 6.1 effective-5.10 (swiftlang-6.1.0.110.21 clang-1700.0.13.3)
+// swift-module-flags: -target x86_64-apple-ios16.6-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name PulseLabsFlightRecorderSDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1
 import AVFoundation
 import AVKit
 import Combine
@@ -28,13 +28,77 @@ import os
 public struct FlightRecorderCustomFontsLib {
 }
 @objc @_inheritsConvenienceInitializers public class FlightRecorderSDK : ObjectiveC.NSObject {
+  @objc public static func setRecordingFPS(_ fps: PulseLabsFlightRecorderSDK.RecordingFPS)
+  @objc public static func setVideoQuality(_ quality: PulseLabsFlightRecorderSDK.VideoQuality)
   @objc override dynamic public init()
   @objc deinit
 }
 extension UIKit.UIWindow {
-  @objc @_Concurrency.MainActor @preconcurrency dynamic open func swizzled_motionEnded(_ motion: UIKit.UIEvent.EventSubtype, with _: UIKit.UIEvent?)
+  @objc @_Concurrency.MainActor @preconcurrency dynamic open func swizzled_motionEnded(_ motion: UIKit.UIEvent.EventSubtype, with event: UIKit.UIEvent?)
+}
+@objc public enum VideoQuality : Swift.Int, Swift.CaseIterable {
+  case low = 0
+  case medium = 1
+  case high = 2
+  public static let defaultValue: PulseLabsFlightRecorderSDK.VideoQuality
+  public var captureScale: CoreFoundation.CGFloat {
+    get
+  }
+  public var compressionQuality: CoreFoundation.CGFloat {
+    get
+  }
+  public init?(rawValue: Swift.Int)
+  public typealias AllCases = [PulseLabsFlightRecorderSDK.VideoQuality]
+  public typealias RawValue = Swift.Int
+  nonisolated public static var allCases: [PulseLabsFlightRecorderSDK.VideoQuality] {
+    get
+  }
+  public var rawValue: Swift.Int {
+    get
+  }
 }
 
+@objc public class FPSConfig : ObjectiveC.NSObject {
+  @objc final public let rules: [PulseLabsFlightRecorderSDK.FPSRule]
+  @objc final public let fallbackFPS: PulseLabsFlightRecorderSDK.RecordingFPS
+  @objc public init(rules: [PulseLabsFlightRecorderSDK.FPSRule], fallbackFPS: PulseLabsFlightRecorderSDK.RecordingFPS)
+  @objc public static var auto: PulseLabsFlightRecorderSDK.FPSConfig {
+    @objc get
+  }
+  @objc deinit
+}
+@objc public class FPSRule : ObjectiveC.NSObject {
+  @objc final public let minGeneration: PulseLabsFlightRecorderSDK.DeviceGeneration
+  @objc final public let maxGeneration: PulseLabsFlightRecorderSDK.DeviceGeneration
+  @objc final public let fps: PulseLabsFlightRecorderSDK.RecordingFPS
+  @objc public init(minGeneration: PulseLabsFlightRecorderSDK.DeviceGeneration, maxGeneration: PulseLabsFlightRecorderSDK.DeviceGeneration, fps: PulseLabsFlightRecorderSDK.RecordingFPS)
+  @objc convenience public init(minGeneration: PulseLabsFlightRecorderSDK.DeviceGeneration, fps: PulseLabsFlightRecorderSDK.RecordingFPS)
+  @objc deinit
+}
+@objc public enum RecordingFPS : Swift.Int, Swift.CaseIterable {
+  case fps1 = 1
+  case fps2 = 2
+  case fps3 = 3
+  case fps4 = 4
+  case fps5 = 5
+  case fps6 = 6
+  case fps7 = 7
+  case fps8 = 8
+  public var frameInterval: Foundation.TimeInterval {
+    get
+  }
+  public static let defaultValue: PulseLabsFlightRecorderSDK.RecordingFPS
+  public static func config(_ config: PulseLabsFlightRecorderSDK.FPSConfig) -> PulseLabsFlightRecorderSDK.RecordingFPS
+  public init?(rawValue: Swift.Int)
+  public typealias AllCases = [PulseLabsFlightRecorderSDK.RecordingFPS]
+  public typealias RawValue = Swift.Int
+  nonisolated public static var allCases: [PulseLabsFlightRecorderSDK.RecordingFPS] {
+    get
+  }
+  public var rawValue: Swift.Int {
+    get
+  }
+}
 public enum FlightRecorderSDKError : Swift.Error {
   case hasntBeenInitialized
   case unexpectedError
@@ -57,14 +121,62 @@ public enum RecordingStatus : Swift.String {
 }
 extension PulseLabsFlightRecorderSDK.FlightRecorderSDK {
   @objc @_Concurrency.MainActor public static func start(apiKey: Swift.String, automaticallyShowIntroduction: Swift.Bool = true)
-  @objc @_Concurrency.MainActor public static func start(apiKey: Swift.String, automaticallyShowIntroduction: Swift.Bool = true, platform: Swift.String = "", useReplayKit: Swift.Bool = false, surveyName: Swift.String? = nil)
-  @_Concurrency.MainActor public static func start(apiKey: Swift.String, automaticallyShowIntroduction: Swift.Bool = true, platform: Swift.String = "", useReplayKit: Swift.Bool = false, surveyName: Swift.String? = nil, customFontsLib: PulseLabsFlightRecorderSDK.FlightRecorderCustomFontsLib? = nil)
+  @objc @_Concurrency.MainActor public static func start(apiKey: Swift.String, automaticallyShowIntroduction: Swift.Bool = true, fpsConfig: PulseLabsFlightRecorderSDK.FPSConfig = FPSConfig.auto)
+  @objc @_Concurrency.MainActor public static func start(apiKey: Swift.String, automaticallyShowIntroduction: Swift.Bool = true, videoQuality: PulseLabsFlightRecorderSDK.VideoQuality = .defaultValue)
+  @objc @_Concurrency.MainActor public static func start(apiKey: Swift.String, automaticallyShowIntroduction: Swift.Bool = true, fpsConfig: PulseLabsFlightRecorderSDK.FPSConfig = FPSConfig.auto, videoQuality: PulseLabsFlightRecorderSDK.VideoQuality = .defaultValue)
+  @objc @_Concurrency.MainActor public static func start(apiKey: Swift.String, automaticallyShowIntroduction: Swift.Bool = true, platform: Swift.String = "", useReplayKit: Swift.Bool = false)
+  @objc @_Concurrency.MainActor public static func start(apiKey: Swift.String, automaticallyShowIntroduction: Swift.Bool = true, platform: Swift.String = "", useReplayKit: Swift.Bool = false, fpsConfig: PulseLabsFlightRecorderSDK.FPSConfig = FPSConfig.auto)
+  @objc @_Concurrency.MainActor public static func start(apiKey: Swift.String, automaticallyShowIntroduction: Swift.Bool = true, platform: Swift.String = "", useReplayKit: Swift.Bool = false, videoQuality: PulseLabsFlightRecorderSDK.VideoQuality = .defaultValue)
+  @objc @_Concurrency.MainActor public static func start(apiKey: Swift.String, automaticallyShowIntroduction: Swift.Bool = true, platform: Swift.String = "", useReplayKit: Swift.Bool = false, fpsConfig: PulseLabsFlightRecorderSDK.FPSConfig = FPSConfig.auto, videoQuality: PulseLabsFlightRecorderSDK.VideoQuality = .defaultValue)
+  @_Concurrency.MainActor public static func start(apiKey: Swift.String, automaticallyShowIntroduction: Swift.Bool = true, platform: Swift.String = "", useReplayKit: Swift.Bool = false, customFontsLib: PulseLabsFlightRecorderSDK.FlightRecorderCustomFontsLib? = nil)
+  @_Concurrency.MainActor public static func start(apiKey: Swift.String, automaticallyShowIntroduction: Swift.Bool = true, platform: Swift.String = "", useReplayKit: Swift.Bool = false, customFontsLib: PulseLabsFlightRecorderSDK.FlightRecorderCustomFontsLib? = nil, fpsConfig: PulseLabsFlightRecorderSDK.FPSConfig = FPSConfig.auto)
+  @_Concurrency.MainActor public static func start(apiKey: Swift.String, automaticallyShowIntroduction: Swift.Bool = true, platform: Swift.String = "", useReplayKit: Swift.Bool = false, customFontsLib: PulseLabsFlightRecorderSDK.FlightRecorderCustomFontsLib? = nil, videoQuality: PulseLabsFlightRecorderSDK.VideoQuality = .defaultValue)
+  @_Concurrency.MainActor public static func start(apiKey: Swift.String, automaticallyShowIntroduction: Swift.Bool = true, platform: Swift.String = "", useReplayKit: Swift.Bool = false, customFontsLib: PulseLabsFlightRecorderSDK.FlightRecorderCustomFontsLib? = nil, fpsConfig: PulseLabsFlightRecorderSDK.FPSConfig = FPSConfig.auto, videoQuality: PulseLabsFlightRecorderSDK.VideoQuality = .defaultValue)
   @objc public static func showIntroductionUI() throws
   @objc public static func showIntroductionUI(displayOnlyOnce: Swift.Bool = true) throws
-  @objc public static func triggerCaptureRecording(surveyName: Swift.String? = nil) throws
+  @_Concurrency.MainActor @objc public static func triggerCaptureRecording() throws
 }
+@objc public enum DeviceGeneration : Swift.Int, Swift.Comparable, Swift.CaseIterable {
+  case iPhone6s = 0
+  case iPhone7 = 1
+  case iPhone8 = 2
+  case iPhoneX = 3
+  case iPhone11 = 4
+  case iPhone12 = 5
+  case iPhone13 = 6
+  case iPhone14 = 7
+  case iPhone15 = 8
+  case iPhone16 = 9
+  case newestiPhone = 9999
+  public static func < (lhs: PulseLabsFlightRecorderSDK.DeviceGeneration, rhs: PulseLabsFlightRecorderSDK.DeviceGeneration) -> Swift.Bool
+  public var displayName: Swift.String {
+    get
+  }
+  public init?(rawValue: Swift.Int)
+  public typealias AllCases = [PulseLabsFlightRecorderSDK.DeviceGeneration]
+  public typealias RawValue = Swift.Int
+  nonisolated public static var allCases: [PulseLabsFlightRecorderSDK.DeviceGeneration] {
+    get
+  }
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @objc public class DeviceDetection : ObjectiveC.NSObject {
+  @objc public static func getCurrentDeviceGeneration() -> PulseLabsFlightRecorderSDK.DeviceGeneration
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension PulseLabsFlightRecorderSDK.VideoQuality : Swift.Equatable {}
+extension PulseLabsFlightRecorderSDK.VideoQuality : Swift.Hashable {}
+extension PulseLabsFlightRecorderSDK.VideoQuality : Swift.RawRepresentable {}
+extension PulseLabsFlightRecorderSDK.RecordingFPS : Swift.Equatable {}
+extension PulseLabsFlightRecorderSDK.RecordingFPS : Swift.Hashable {}
+extension PulseLabsFlightRecorderSDK.RecordingFPS : Swift.RawRepresentable {}
 extension PulseLabsFlightRecorderSDK.FlightRecorderSDKError : Swift.Equatable {}
 extension PulseLabsFlightRecorderSDK.FlightRecorderSDKError : Swift.Hashable {}
 extension PulseLabsFlightRecorderSDK.RecordingStatus : Swift.Equatable {}
 extension PulseLabsFlightRecorderSDK.RecordingStatus : Swift.Hashable {}
 extension PulseLabsFlightRecorderSDK.RecordingStatus : Swift.RawRepresentable {}
+extension PulseLabsFlightRecorderSDK.DeviceGeneration : Swift.Hashable {}
+extension PulseLabsFlightRecorderSDK.DeviceGeneration : Swift.RawRepresentable {}
